@@ -1,14 +1,22 @@
-# Núcleo de Web
+# Núcleo Web
 
-Olá, pessoa! Seja bem vindo ao Núcleo de Web!
+Olá, pessoa! Seja bem vindo ao Núcleo Web!
 
 Este repositório será usado para ver e fazer as atividades do núcleo durante este ciclo. Você precisará clonar este repositório no seu computador.
 
 ## Instruções de envio de atividades
 
-Crie uma branch a partir da `main` seguindo o padrão `[número da atividade]-[nome do indivíduo]` para fazer cada atividade (por exemplo: `2-fulano` para desenvolver a 2ª atividade do núcleo).
+#### Branch
+Crie uma branch a partir da `main` seguindo o padrão `[nome do indivíduo]` para servir como repositório de suas atividades (por exemplo: a branch sob nome`José` irá reunir todas as atividade de José feitas no núcleo).
 
+### Pull Request
+É possivél ocorrer alterações no repositório durante o período do núcleo, como atualizações do README. Portanto, lembre-se periodicamente de inserir o comando `git pull origin main`, para certificar que sua branch está atualizada em relação a main, e assim evitar conflitos na hora do merge request.
+
+#### Commits
 Seus commits deverão ser contínuos e explicativos, então nada de fazer a atividade inteira em um só commit com a mensagem _"atividade do nucleo ae"_, beleza? Os orientadores precisam acompanhar o progresso dos membros, e isso será feito através dos seus commits no GitLab.
+
+#### Merge Requests
+Quando terminar o trabalho, realizar o merge request para a main, a fim de sinalizar para o orientador que finalizou a sua atividade. O merge request deve seguir o padrão de título `[número da atividade] - [nome da atividade]` (por exemplo: `2 - Coffee Shop` para indicar que finalizou a 2ª atividade do núcleo).
 
 ## Observações importantes
 
