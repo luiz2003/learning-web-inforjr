@@ -9,7 +9,7 @@
 
 ## Descrição da atividade
 
-O projeto La Padarie tem por objetivo continuar o aprendizado em HTML, CSS e Javascript simulando um mini sistema de vendas de pães. O projeto possui o formato single page, em que todas as ações acontecem na mesma página, sem o auxílio e carregamento de links de navegação.
+O projeto La Padarie tem por objetivo continuar o aprendizado em HTML, CSS e Javascript, simulando um mini sistema de vendas de pães. O projeto possui o formato single page, em que todas as ações acontecem na mesma página, sem o auxílio e carregamento de links de navegação.
 
 ### Tarefa
 
@@ -19,7 +19,7 @@ Acesse a [issue](https://gitlab.com/InfoJrUFBA/nucleos/2021/03/web/-/issues/4) d
 
 ---
 
-_³Mockup é uma representação estática de um projeto, bem próximo do design final, o seu uso tem como finalidade representar a estrutura da informação, visualizar o conteúdo de forma estática, demonstrar as principais funcionalidades (de forma estática) e estimular os envolvidos a revisarem a parte visual (design) do projeto._
+_¹Mockup é uma representação estática de um projeto, bem próximo do design final, o seu uso tem como finalidade representar a estrutura da informação, visualizar o conteúdo de forma estática, demonstrar as principais funcionalidades (de forma estática) e estimular os envolvidos a revisarem a parte visual (design) do projeto._
 
 ## Materiais de apoio
 
