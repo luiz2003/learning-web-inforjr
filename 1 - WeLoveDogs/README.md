@@ -3,7 +3,7 @@
 ## Informações principais
 
 - **Núcleo:** Web
-- **Orientador:** [Monique Silva](@moniquedsilva)
+- **Orientadores:** [Lávio Vale](https://gitlab.com/lavio) e [Monique Silva](@moniquedsilva)
 - **Data da Atividade:** 11/09/2021
 - **Data de Entrega:** 18/09/2021
 
