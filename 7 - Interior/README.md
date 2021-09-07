@@ -13,7 +13,7 @@ O projeto Interior tem por objetivo explorar uma das funcionalidades mais comuns
 
 ### Tarefa
 
-Com base no mockup apresentado, usando HTML, CSS, NodeJS, ExpressJS, Dotenv e Nodemailer construa a página de contato da Interior Design e configure-o para que todas as respostas do formulário sejam enviadas para o seu email. Acesse a [issue](https://gitlab.com/InfoJrUFBA/nucleos/2021/03/web/-/issues/7) da atividade para visualizar os requisitos que serão avaliados na hora da correção.
+Com base no [mockup](https://www.figma.com/file/Cej98HXCcHfeLmfPQ6cwR1/Interior-Contact-Us?node-id=0%3A1) apresentado, usando HTML, CSS, NodeJS, ExpressJS, Dotenv e Nodemailer construa a página de contato da Interior Design e configure-o para que todas as respostas do formulário sejam enviadas para o seu email. Acesse a [issue](https://gitlab.com/InfoJrUFBA/nucleos/2021/03/web/-/issues/7) da atividade para visualizar os requisitos que serão avaliados na hora da correção.
 
 **OBS**: É importante fazer o correto uso do módulo dotenv para guardar suas credenciais de email, lembre-se também de incluir o nome do arquivo (.env) dentro do arquivo .gitignore, assim evitará o envio das suas informações pessoais para o gitlab.
 
