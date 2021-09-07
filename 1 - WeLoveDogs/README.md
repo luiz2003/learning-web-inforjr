@@ -59,13 +59,6 @@ Form
 - [Criando um Formulário - Zero Bugs](https://youtu.be/vJoCnzEucCc)
 - [Tag form do HTML5 - hcode](https://youtu.be/spgu7it3ODY)
 
-Validação HTML
-
-- [Criar Formulario HTML + Validar Formulario - Codegate01](https://youtu.be/tZ7MEuygnU8)
-- [HTML5 Form Validation Examples - The Art of Web (Texto)](https://www.the-art-of-web.com/html/html5-form-validation/)
-- [Form data validation - MDN (Texto)](https://developer.mozilla.org/pt-BR/docs/Learn/Forms/Form_validation)
-- [Validação de formulários com HTML5 - Medium (Texto)](https://medium.com/jaguaribetech/valida%C3%A7%C3%A3o-de-formul%C3%A1rios-com-html5-d1d1aa89bc77)
-
 #### CSS
 
 Flexbox
@@ -84,7 +77,7 @@ Formatação geral
 ## Instruções para envio
 
 1. Clone este repositório no seu computador
-2. Crie a partir da `main` uma nova branch com o seu nome (ou o nome de alguma pessoa do grupo, caso a atividade seja em grupo). Por exemplo: `thales`
+2. Crie a partir da `main` uma nova branch com seu número de turma e nome. Por exemplo: `1-jose` caso pertença a turma de sexta e `2-jose` caso seja a de sábado
 3. Inclua seu nome na ficha de entrega do `README.md`
 4. Construa a sua atividade apenas nessa branch, e não hesite em pedir por ajuda caso tenha dificuldades
 5. Suba constantemente a sua branch para este repositório para possibilitar o acompanhamento por parte dos orientadores

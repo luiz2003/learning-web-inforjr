@@ -93,7 +93,7 @@ Data dinâmica
 ## Instruções para envio
 
 1. Clone este repositório no seu computador
-2. Crie a partir da `main` uma nova branch com o seu nome (ou o nome de alguma pessoa do grupo, caso a atividade seja em grupo). Por exemplo: `thales`
+2. Crie a partir da `main` uma nova branch com seu número de turma e nome. Por exemplo: `1-jose` caso pertença a turma de sexta e `2-jose` caso seja a de sábado
 3. Inclua seu nome na ficha de entrega do `README.md`
 4. Construa a sua atividade apenas nessa branch, e não hesite em pedir por ajuda caso tenha dificuldades
 5. Suba constantemente a sua branch para este repositório para possibilitar o acompanhamento por parte dos orientadores
