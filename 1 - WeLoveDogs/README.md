@@ -64,6 +64,7 @@ Validação HTML
 - [Criar Formulario HTML + Validar Formulario - Codegate01](https://youtu.be/tZ7MEuygnU8)
 - [HTML5 Form Validation Examples - The Art of Web (Texto)](https://www.the-art-of-web.com/html/html5-form-validation/)
 - [Form data validation - MDN (Texto)](https://developer.mozilla.org/pt-BR/docs/Learn/Forms/Form_validation)
+- [Validação de formulários com HTML5 - Medium (Texto)](https://medium.com/jaguaribetech/valida%C3%A7%C3%A3o-de-formul%C3%A1rios-com-html5-d1d1aa89bc77)
 
 #### CSS
 
