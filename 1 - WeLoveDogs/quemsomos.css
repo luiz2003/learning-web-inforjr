@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;    
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+button{
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 16px;
+    height: 10vh;
+}
+
+header p{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+header p span{
+    color: greenyellow;
+    font-weight: 700;
+}
+
+header nav{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-right: 16px;
+
+}
+
+header nav a{
+    color: black;
+    font-weight: 700;
+}
+
+header nav button{
+    background-color: #7ED32166;
+    font-size: 16px;
+    color: #1C4701;
+    padding: 9px 32px;
+    font-weight: 700;
+    border-radius: 16px;
+    font-weight: 700;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteudo {
+    width: 687px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+main div img{
+    height: 266px;
+    width: 354;
+}
+
+#titulo{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+}
