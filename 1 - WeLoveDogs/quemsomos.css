@@ -62,6 +62,8 @@ header nav button{
     width: 687px;
     display: flex;
     flex-direction: column;
+    text-align: justify;
+    text-justify: inter-word;
     gap: 14px;
 }
 
