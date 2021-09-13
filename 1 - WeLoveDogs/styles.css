@@ -3,6 +3,7 @@
     padding: 0px;
     text-decoration: none;    
     font-family: 'Open Sans', sans-serif;
+    border: none;
 }
 button{
     cursor: pointer;
@@ -43,7 +44,7 @@ header nav button{
     background-color: #7ED32166;
     font-size: 16px;
     color: #1C4701;
-    padding: 9px 32px;
+    padding: 9px 32px 9px 32px;
     font-weight: 700;
     border-radius: 16px;
     font-weight: 700;
@@ -52,10 +53,15 @@ header nav button{
 main{
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
 main div{
     width: 371px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 main div p {
@@ -68,8 +74,8 @@ main div button{
     background: #7ED321;
     font-size: 18px;
     color: #1C4701;
-    padding: 13px 55px 13px 55px;
-    font-weight: 700;
+    max-width: 220px;
+    padding: 13px 0px 13px 0px;
     border-radius: 16px;
     font-weight: 700;
 }

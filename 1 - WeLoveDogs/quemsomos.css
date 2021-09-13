@@ -4,6 +4,7 @@
     text-decoration: none;    
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    border: none;
 }
 button{
     cursor: pointer;
