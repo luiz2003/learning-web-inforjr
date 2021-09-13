@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;    
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+}
+button{
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 16px;
+    height: 10vh;
+}
+
+header p{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+header p span{
+    color: greenyellow;
+    font-weight: 700;
+}
+
+header nav{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-right: 16px;
+
+}
+
+header nav a{
+    color: black;
+    font-weight: 700;
+}
+
+header nav button{
+    background-color: #7ED32166;
+    font-size: 16px;
+    color: #1C4701;
+    padding: 9px 32px 9px 32px;
+    font-weight: 700;
+    border-radius: 16px;
+    font-weight: 700;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-end;
+    margin-top: 22px;
+}
+
+.input-container{
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    font-weight: 700;
+    size: 18px;
+}
+
+.message{
+    display: flex;
+    width: 556;
+    font-weight: 700;
+    gap: 23px;
+    size: 18px;
+}
+.message p {
+    text-align: center;
+}
+
+input{
+    border: 1px solid #9F9F9F;
+    border-radius: 7px;
+    width: 415px;
+    height: 43px;
+    padding: 0px 13px;
+}
+
+textarea{
+    resize: none;
+    border: 1px solid #9F9F9F;
+    border-radius: 7px;
+    width: 415px;
+    padding: 11px 13px;
+    font-size: 14px;
+}
+
+.form-container button{
+    margin-top: 10px;
+    background: #7ED321;
+    font-size: 16px;
+    color: #1C4701;
+    width: 141px;
+    height: 42px;
+    border-radius: 16px;
+    font-weight: 700;
+}
