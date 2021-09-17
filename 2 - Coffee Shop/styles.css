@@ -2,11 +2,116 @@
     margin: 0px;
     padding: 0px;
     text-decoration: none;
-    
+    border: none;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+}
+button{
+    cursor: pointer;
+    background: #2D635E;
+    color: white;
+    mix-blend-mode: normal;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
 }
 
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 36px 120px 39px 120px;
+    align-items: center;   
+}
+header img{
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    font-weight: 400;
+    align-items: center;
+}
+nav a{
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+}
+nav button{
+    cursor: pointer;
+    padding: 14px 26px;
+    background: #2D635E;
+    color: white;
+    mix-blend-mode: normal;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+}
+.home-container{
+    display: flex;
+}
+#main-img{
+    
+}
+.home-main{
+    display: flex;
+}
 
+.socials{
+    display: flex;
+    flex-direction: column;
+    margin-top: 230px;
+    margin-left: 40px;
+    font-weight: 400;
+    font-family: Josefin Sans;
+}
+.socials p{
+    transform: rotate(-180deg);
+    writing-mode: tb-rl;
+    size: 28px;
+}
+#main-follow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.home-container {
+    display: flex;
+    justify-content: center
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.icons img{
+    width: 32px;
+    height: 32px;
+}
+.home-container aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:598px;
+    gap: 26px;
+    margin-left: 0px;
+    
+}
+.home-container aside h1{
+    font-size: 63px;
+    font-weight: 700;
+}
+.home-container aside h3{
+    font-family: 'Cedarville Cursive', cursive;
+    font-weight: 400;
+    font-size: 28px;
+    color: #444A4A;
+}
+.home-container aside button{
+    padding: 16px 0px 16px 0px;
+    width: 235px;
+    font-size: 20px;
+}
 
 @media(max-width:768px){ /* aqui dentro é a versão pra celular */
 
