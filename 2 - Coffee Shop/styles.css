@@ -11,8 +11,6 @@ button{
     cursor: pointer;
     background: #2D635E;
     color: white;
-    mix-blend-mode: normal;
-    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
     border-radius: 7px;
 }
 
@@ -40,6 +38,8 @@ nav a{
 nav button{
     padding: 12px 26px;
     font-size: 16px;
+    mix-blend-mode: normal;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
 }
 .home-container{
     display: flex;
@@ -109,7 +109,7 @@ nav button{
     gap: 90px;
     align-items: center;
 }
-.aboutUs-img h3{
+h3{
     font-family: 'Cedarville Cursive', cursive;
     font-family: Cedarville Cursive;
     font-style: normal;
@@ -137,11 +137,43 @@ h2{
     display: flex;
     flex-direction: column;
     gap: 15px;
+
+    
+}
+.txt-area p{
     font-family: 'Alegreya Sans', sans-serif;
     font-weight: 400;
     font-size: 19px;
     color: #444A4A;
-    
+    line-height: 36px;
+}
+
+.promotion-container{
+    margin-left: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 103px;
+    margin-top: 77px;
+    background-color: ;
+}
+.promotion-container aside{
+    display: flex;
+    flex-direction: column;
+    width: 615px;
+    gap: 34px;
+}
+.promotion-container aside button{
+    width: 235px;
+    padding: 16px 0px 16px 0px;
+    font-size: 20px;
+    line-height: 20px;
+}
+#promotion-img{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 120px;
 }
 @media(max-width:768px){ /* aqui dentro é a versão pra celular */
 
