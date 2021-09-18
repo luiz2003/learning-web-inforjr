@@ -175,6 +175,59 @@ h2{
     align-items: flex-end;
     margin-right: 120px;
 }
+.shop-container{
+    height: 528px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E3EBE7;
+    gap: 30px;
+    margin-top: 77px;
+}
+.menu-card{
+    width: 340px;
+    height: 458px;
+    background-color: white;
+    box-shadow: 0px 23px 34px rgba(35, 57, 55, 0.17);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    
+}
+.menu-card h4{
+    text-align: center;
+}
+.menu-txt{
+    width: 224px;
+    margin-top: 26px;
+    margin-bottom: 43px;
+}
+.menu-txt p{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 19px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.001em;
+    color: #444A4A;
+}
+.menu-card h4{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+}
+.menu-card button{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 17px 67px 17px 67px;
+    text-align: center;
+}
 @media(max-width:768px){ /* aqui dentro é a versão pra celular */
 
 
