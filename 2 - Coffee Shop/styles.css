@@ -187,6 +187,7 @@ h2{
     background-color: #E3EBE7;
     gap: 3.0rem;
     margin-top: 11.5vh;
+    
 }
 .menu-card{
     width: 24.9vw;
@@ -254,6 +255,25 @@ h4{
     display: flex;
     flex-direction: column;
     gap: 2.3vh;
+}
+
+footer{
+    margin-bottom: 1.85vh;
+    margin-top: 9.26vh;
+}
+footer p{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.9em;
+    text-align: center;
+    letter-spacing: 0.001em;
+    color: #444A4A; 
+}
+footer span{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.9em;
+    text-align: center;
+    letter-spacing: 0.001em;
+    color: #444A4A; 
 }
 @media(max-width:768px){ /* aqui dentro é a versão pra celular */
 
