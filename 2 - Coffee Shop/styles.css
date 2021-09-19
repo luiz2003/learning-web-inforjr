@@ -51,13 +51,13 @@ nav button{
     display: flex;
 }
 .socials{
-    background-color: brown;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+    margin-bottom: 55px;
     margin-left: 40px;
     font-weight: 400;
-    font-family: Josefin Sans;
+    font-family: 'Josefin Sans', sans-serif;
 }
 .socials p{
     transform: rotate(-180deg);
@@ -277,6 +277,60 @@ footer p{
     color: #444A4A; 
 }
 @media(max-width:768px){ /* aqui dentro é a versão pra celular */
-
-
+nav{
+    display: none;
+}
+header{
+    justify-content: center;
+}
+.home-main{
+    display: none;
+}
+.home-container aside{
+    width: 100%;
+    height: 80vh;
+    margin-left: 0px;
+    margin-right: 0px;
+    align-items: center;
+}
+.home-container aside h1{
+    margin-top: 12px;
+    margin-bottom: 30px;
+    font-size: 5.4rem;
+    font-weight: 700;
+}
+.home-container aside h3{
+    text-align: center;font-style: normal;
+    font-weight: normal;
+    font-size: 1.9rem;
+    line-height: 3.6rem;
+    color: black;
+}
+.about-container{
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.about-container h3{
+    display: none;
+}
+.about-container img{
+    width: 100vw;
+    margin-top: 6.7rem;
+}
+.aboutus-txt{
+    width: 75.73vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin-top: 3em;
+}
+.aboutus-txt h2{
+    width: 40vw;
+    height: 76px;
+    font-size: 3.8rem;
+    margin-bottom: 3rem;
+    text-align: left;
+}
 }
