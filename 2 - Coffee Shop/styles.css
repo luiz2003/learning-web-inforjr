@@ -269,9 +269,9 @@ footer p{
     letter-spacing: 0.001em;
     color: #444A4A; 
 }
-footer span{
+#year{
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: 1.9em;
+    font-size: 1.1875em;
     text-align: center;
     letter-spacing: 0.001em;
     color: #444A4A; 
