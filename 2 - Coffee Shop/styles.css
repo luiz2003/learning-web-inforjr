@@ -7,17 +7,20 @@
     font-family: 'Cedarville Cursive', cursive;
     font-family: 'Josefin Sans', sans-serif;
 }
+html{
+    font-size: 62.5%;
+}
 button{
     cursor: pointer;
     background: #2D635E;
     color: white;
-    border-radius: 7px;
+    border-radius: 0.7rem;
 }
 
 header{
     display: flex;
     justify-content: space-between;
-    margin: 4vh 9vw 4vh 9vw;
+    margin: 5.3vh 9vw 5.3vh 9vw;
     align-items: center;   
 }
 header img{
@@ -28,7 +31,7 @@ nav{
     width: 43vw;
     justify-content: space-between;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.6rem;
     align-items: center;
 }
 nav a{
@@ -36,10 +39,10 @@ nav a{
     font-family: 'Josefin Sans', sans-serif;
 }
 nav button{
-    padding: 12px 26px;
-    font-size: 16px;
+    padding: 1.35rem 2.7rem;
+    font-size: 1.6rem;
     mix-blend-mode: normal;
-    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0rem 0.7rem 1rem rgba(0, 0, 0, 0.1);
 }
 .home-container{
     display: flex;
@@ -58,7 +61,8 @@ nav button{
 .socials p{
     transform: rotate(-180deg);
     writing-mode: tb-rl;
-    size: 28px;
+    font-size: 2.0rem;
+    margin-top: 0.2rem;
 }
 #main-follow{
     display: flex;
@@ -68,45 +72,45 @@ nav button{
 }
 .home-container {
     display: flex;
-    justify-content: center
+    justify-content: center;
+    margin-bottom: 14vh;
 }
 .icons{
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    gap: 0.3rem;
 }
 .icons img{
-    width: 32px;
-    height: 32px;
+    width: 3.2rem;
+    height: 3.2rem;
 }
 .home-container aside {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width:44vw;
-    gap: 26px;
-    margin-left: 0px;
+    gap: 2.6rem;
     
 }
 .home-container aside h1{
-    font-size: 63px;
+    font-size: 6.3rem;
     font-weight: 700;
 }
 .home-container aside h3{
     font-family: 'Cedarville Cursive', cursive;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 2.8rem;
     color: #444A4A;
 }
 .home-container aside button{
-    padding: 16px 0px 16px 0px;
-    width: 235px;
-    font-size: 20px;
+    padding: 1.6rem 0rem 1.6rem 0rem;
+    width: 23.5rem;
+    font-size: 2.0rem;
 }
 .about-container{
     display: flex;
     justify-content: center;
-    gap: 90px;
+    gap: 9rem;
     align-items: center;
 }
 h3{
@@ -114,8 +118,8 @@ h3{
     font-family: Cedarville Cursive;
     font-style: normal;
     font-weight: normal;
-    font-size: 28px;
-    line-height: 53px;
+    font-size: 2.8rem;
+    line-height: 5.3rem;
     color: #000000;
     opacity: 0.75;
 }
@@ -125,27 +129,27 @@ h3{
 h2{
     font-style: normal;
     font-weight: bold;
-    font-size: 38px;
-    line-height: 38px;
+    font-size: 3.8rem;
+    line-height: 3.8rem;
 }
 .aboutus-txt{
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 2.5rem;
 }
 .txt-area{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1.5rem;
 
     
 }
 .txt-area p{
     font-family: 'Alegreya Sans', sans-serif;
     font-weight: 400;
-    font-size: 19px;
+    font-size: 1.9rem;
     color: #444A4A;
-    line-height: 36px;
+    line-height: 3.6rem;
 }
 
 .promotion-container{
@@ -154,20 +158,20 @@ h2{
     justify-content: space-between;
     align-items: center;
     gap: 8vw;
-    margin-top: 10vh;
+    margin-top: 26.6vh;
 
 }
 .promotion-container aside{
     display: flex;
     flex-direction: column;
     width: 45vw;
-    gap: 34px;
+    gap: 3.4rem;
 }
 .promotion-container aside button{
-    width: 235px;
-    padding: 16px 0px 16px 0px;
-    font-size: 20px;
-    line-height: 20px;
+    width: 17.2vw;
+    padding: 1.6rem 0rem 1.6rem 0rem;
+    font-size: 2.0rem;
+    line-height: 2.0rem;
 }
 #promotion-img{
     display: flex;
@@ -176,20 +180,20 @@ h2{
     margin-right: 9vw;
 }
 .shop-container{
-    height: 528px;
+    height: 77vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #E3EBE7;
-    gap: 30px;
-    margin-top: 10vh;
+    gap: 3.0rem;
+    margin-top: 11.5vh;
 }
 .menu-card{
-    width: 340px;
-    height: 458px;
+    width: 24.9vw;
+    height: 68.46vh;
     background-color: white;
-    box-shadow: 0px 23px 34px rgba(35, 57, 55, 0.17);
-    border-radius: 25px;
+    box-shadow: 0px 1.5vw 5vh rgba(35, 57, 55, 0.17);
+    border-radius: 2.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -200,14 +204,14 @@ h2{
     text-align: center;
 }
 .menu-txt{
-    width: 224px;
-    margin-top: 26px;
-    margin-bottom: 43px;
+    width: 15.5vw;
+    margin-top: 3.8vh;
+    margin-bottom: 6.42vh;
 }
 .menu-txt p{
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: 19px;
-    line-height: 36px;
+    font-size: 1.9rem;
+    line-height: 3.6rem;
     text-align: center;
     letter-spacing: 0.001em;
     color: #444A4A;
@@ -215,41 +219,41 @@ h2{
 .menu-card h4{
     font-style: normal;
     font-weight: bold;
-    font-size: 28px;
-    line-height: 28px;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
     text-align: center;
     color: #000000;
 }
 .menu-card button{
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 20px;
-    padding: 17px 67px 17px 67px;
+    font-size: 2.0rem;
+    line-height: 2.0rem;
+    padding: 2.54vh 4.6vw 2.54vh 4.6vw;
     text-align: center;
 }
 .contacts-container{
     display: flex;
     justify-content: center;
-    margin-top: 62px;
+    margin-top: 9.2vh;
     align-items: center;
 }
 h4{
     font-weight: bold;
-    font-size: 32px;
-    line-height: 45px;
+    font-size: 3.2rem;
+    line-height: 4.5rem;
     letter-spacing: 0.02em;
 }
 .address{
-    margin-left: 14vw;
+    margin-left: 13.8vw;
 }
 .address h4{
-    margin-bottom: 3vh;
+    margin-bottom: 3.13vh;
 }
 #locations{
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 2.3vh;
 }
 @media(max-width:768px){ /* aqui dentro é a versão pra celular */
 
