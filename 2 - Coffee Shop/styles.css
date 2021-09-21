@@ -203,7 +203,7 @@ h2{
     
 }
 .menu-card h4{
-    text-align: center;
+
 }
 .menu-txt{
     width: 15.5vw;
@@ -214,7 +214,7 @@ h2{
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 1.9rem;
     line-height: 3.6rem;
-    text-align: center;
+    
     letter-spacing: 0.001em;
     color: #444A4A;
 }
@@ -277,60 +277,123 @@ footer p{
     color: #444A4A; 
 }
 @media(max-width:768px){ /* aqui dentro é a versão pra celular */
-nav{
-    display: none;
+    nav{
+        display: none;
+    }
+    header{
+        justify-content: center;
+    }
+    .home-main{
+        display: none;
+    }
+    .home-container aside{
+        width: 100%;
+        height: 80vh;
+        margin-left: 0px;
+        margin-right: 0px;
+        align-items: center;
+    }
+    .home-container aside h1{
+        margin-top: 12px;
+        margin-bottom: 30px;
+        font-size: 5.4rem;
+        font-weight: 700;
+    }
+    .home-container aside h3{
+        text-align: center;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.9rem;
+        line-height: 3.6rem;
+        color: black;
+    }
+    .about-container{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .about-container h3{
+        display: none;
+    }
+    #figure2{
+        width: 100vw;
+        margin-top: 6.7rem;
+        display: flex;
+        justify-content: center;
+    }
+    .aboutus-txt{
+        width: 75.73vw;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 3em;
+    }
+    .aboutus-txt h2{
+        width: 40vw;
+        font-size: 3.8rem;
+        text-align: left;
+    }
+    .promotion-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-left: 8.2vw;
+    }
+    .promotion-container h3{
+        display: none;
+        gap: 30px;
+    }
+    .promotion-container aside h2{
+        
+        text-align: left;
+        font-family: 'Josefin Sans', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 36px;
+        text-align: left;
+        
+    }
+    .promotion-container aside{
+        flex-direction: flex-start;
+        width: 91.8vw;
+    }
+    .promotion-container button{
+        display: none;
+    }
+    .shop-container{
+        flex-direction: column;
+        height: 100vh;   
+    }
+    .menu-card{
+        width: 89.6%;
+        height: 30%;
+    }
+    .menu-txt{
+        width: 66.4%;
+        text-align: center;
+        margin-top: 3.8vh;
+        margin-bottom: 6.42vh;
+    }
+    .menu-txt p{
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size: 1.9rem;
+        line-height: 3.6rem;
+        text-align: none;
+        letter-spacing: 0.001em;
+        color: #444A4A;
+    }
+
 }
-header{
-    justify-content: center;
+
+@media(max-width:380px){
+    #fg2{
+        width: 100vw;
+    }
 }
-.home-main{
-    display: none;
-}
-.home-container aside{
-    width: 100%;
-    height: 80vh;
-    margin-left: 0px;
-    margin-right: 0px;
-    align-items: center;
-}
-.home-container aside h1{
-    margin-top: 12px;
-    margin-bottom: 30px;
-    font-size: 5.4rem;
-    font-weight: 700;
-}
-.home-container aside h3{
-    text-align: center;font-style: normal;
-    font-weight: normal;
-    font-size: 1.9rem;
-    line-height: 3.6rem;
-    color: black;
-}
-.about-container{
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-.about-container h3{
-    display: none;
-}
-.about-container img{
-    width: 100vw;
-    margin-top: 6.7rem;
-}
-.aboutus-txt{
-    width: 75.73vw;
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-    margin-top: 3em;
-}
-.aboutus-txt h2{
-    width: 40vw;
-    height: 76px;
-    font-size: 3.8rem;
-    margin-bottom: 3rem;
-    text-align: left;
-}
+
+@media(max-width:320px){
+    #fg3{
+        width: 100vw;
+    }
 }
