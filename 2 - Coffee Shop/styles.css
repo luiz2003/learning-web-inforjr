@@ -181,30 +181,27 @@ h2{
     margin-right: 9vw;
 }
 .shop-container{
-    height: 77vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #E3EBE7;
     gap: 3.0rem;
     margin-top: 11.5vh;
-    
+    padding: 5.2% 12.5%;
 }
 .menu-card{
-    width: 24.9vw;
-    height: 68.46vh;
+    padding: 45px;
     background-color: white;
     box-shadow: 0px 1.5vw 5vh rgba(35, 57, 55, 0.17);
     border-radius: 2.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
+    text-align: center;
     
 }
-.menu-card h4{
 
-}
 .menu-txt{
     width: 15.5vw;
     margin-top: 3.8vh;
@@ -229,9 +226,8 @@ h2{
 .menu-card button{
     font-style: normal;
     font-weight: normal;
-    font-size: 2.0rem;
-    line-height: 2.0rem;
-    padding: 2.54vh 4.6vw 2.54vh 4.6vw;
+    font-size: 20px;
+    padding: 17px 67px;
     text-align: center;
 }
 .contacts-container{
@@ -363,11 +359,10 @@ footer p{
     }
     .shop-container{
         flex-direction: column;
-        height: 100vh;   
+        padding:5.2% 4.8% ;
     }
-    .menu-card{
-        width: 89.6%;
-        height: 30%;
+    .menu-card button{
+        padding: 17px 67px 17px 67px ;
     }
     .menu-txt{
         width: 66.4%;
@@ -395,5 +390,10 @@ footer p{
 @media(max-width:320px){
     #fg3{
         width: 100vw;
+    }
+}
+@media (min-width: 1000px){
+    .menu-card button{
+        padding: 2.54vh 4.6vw 2.54vh 4.6vw;
     }
 }
