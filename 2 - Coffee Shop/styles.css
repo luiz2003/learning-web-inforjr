@@ -193,6 +193,7 @@ h2{
 }
 .menu-card{
     padding: 45px;
+    min-height: 52vh;
     background-color: white;
     box-shadow: 0px 1.5vw 5vh rgba(35, 57, 55, 0.17);
     border-radius: 2.5em;
@@ -363,6 +364,10 @@ footer p{
     .shop-container{
         flex-direction: column;
         padding:5.2% 4.8% ;
+    }
+    .menu-card{
+        padding: 40px 0px;
+        min-height: 0px;
     }
     .menu-card button{
         padding: 17px 67px 17px 67px ;
