@@ -53,6 +53,7 @@ nav button{
 .socials{
     display: flex;
     flex-direction: column;
+    gap: 1rem;
     justify-content: flex-end;
     margin-bottom: 55px;
     margin-left: 40px;
@@ -79,11 +80,12 @@ nav button{
 .icons{
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
+    gap: 1.4rem;
 }
 .icons img{
     width: 3.2rem;
     height: 3.2rem;
+    cursor: pointer;
 }
 .home-container aside {
     display: flex;
@@ -267,6 +269,7 @@ footer p{
 }
 #year{
     font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 400;
     font-size: 1.1875em;
     text-align: center;
     letter-spacing: 0.001em;
@@ -378,6 +381,37 @@ footer p{
         letter-spacing: 0.001em;
         color: #444A4A;
     }
+    .map img{
+        width: 100vw;
+    }
+    .address{
+        text-align: center;
+        margin-left:0px;
+        margin-top: 5rem;
+    }
+    #locations{
+        align-items: center;
+        justify-content: center;
+    }
+    .contacts-container h3{
+        display: none;
+    }
+    .contacts-container{
+        flex-direction: column;
+    }
+    .txt-gone{
+        display: none;
+    }
+    .address button{
+        padding: 1.7rem 3.1rem;
+        background: #FFFFFF;
+        mix-blend-mode: normal;
+        box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.17);
+        border-radius: 0.5rem;
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        color: #444A4A;
+    }
 
 }
 
@@ -395,5 +429,10 @@ footer p{
 @media (min-width: 1000px){
     .menu-card button{
         padding: 2.54vh 4.6vw 2.54vh 4.6vw;
+    }
+}
+@media (min-width: 768px) {
+    .address button{
+        display: none;
     }
 }
