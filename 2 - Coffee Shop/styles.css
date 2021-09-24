@@ -426,6 +426,7 @@ footer p{
         margin: 0px;
         padding: 0px;
         padding-top: 35px;
+        padding-bottom: 15px;
         justify-content: space-around;
         align-items: center;
         position:fixed;
@@ -441,9 +442,9 @@ footer p{
     #nav.active{
         margin: 0px;
         position:fixed;
-        top: 7.6%;
+        top: 8%;  
         width: 100%;
-        height: calc(100%-78);
+        height: 92%;
         background: white;
         display: flex;
         flex-direction: column;
@@ -464,6 +465,9 @@ footer p{
     .icons-nav{
         display: flex;
         gap:27px;
+    }
+    .icons-nav{
+        margin-top: 40%;
     }
 
 }
