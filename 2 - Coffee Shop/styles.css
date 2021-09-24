@@ -281,7 +281,7 @@ footer p{
         display: none;
     }
     header{
-        justify-content: center;
+        justify-content: space-between;
     }
     .home-main{
         display: none;
@@ -440,4 +440,8 @@ footer p{
     .address button{
         display: none;
     }
+    #btnMbl{
+        display: none;
+    }
+ 
 }
