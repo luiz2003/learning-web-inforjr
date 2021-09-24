@@ -8,16 +8,19 @@
 html{
     font-size: 62.5%
 }
+
 header{
+    top: 0;
     display: flex;
-    position: fixed;
+    position: sticky;
     justify-content: space-between;
     padding: 1.6rem 7rem;
     background-color: white;
     width: calc(100% - 14rem);
+    z-index: 10000;
 }
 nav{
-    width: 29.8%;
+    gap: 3.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,4 +37,16 @@ nav button{
     background-color: white;
     color: #2F70FE;
     border: 1px solid #2F70FE;
+    text-align: center;
+}
+.hero{
+    background-color: #2F70FE;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heroTitle{
+    text-align: center;
+    color: white;
 }
