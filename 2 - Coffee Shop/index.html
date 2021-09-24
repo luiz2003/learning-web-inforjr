@@ -8,23 +8,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Cedarville+Cursive&family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="script.js"></script>
     <title>Coffe-Shop</title>
 </head>
 <body>
    <header>
     <img src="images/logo.svg" alt="">
-    <button id="btnMbl">menu</button>
-    <nav>
+    <button id="btnMbl"><img id="menuImg" src="images/nav-icon.png" alt=""></button>
+    <nav id="nav">
         <p><a href="">About us</a></p>
         <p><a href="">Promotion</a></p>
         <p><a href="">Shop</a></p>
         <p><a href="">Contacts</a></p>
         <button>Contact Us</button>
+        <div class="icons-nav">
+            <img src="images/TwtIcon.png" alt="">
+            <img src="images/InstaIcon.png" alt="">
+            <img src="images/FbIcon.png" alt="">
+        </div>
     </nav>
    </header>
    
-   <main>
+   <main id="body">
 
         <div class="home-container">
             <aside class="home-aside">
@@ -137,6 +141,6 @@
             document.getElementById("year").innerHTML = new Date().getFullYear();
         </script>
     </footer>
-   
 </body>
+<script type="text/javascript" src="script.js"></script>
 </html> 

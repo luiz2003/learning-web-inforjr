@@ -7,6 +7,10 @@
     font-family: 'Cedarville Cursive', cursive;
     font-family: 'Josefin Sans', sans-serif;
 }
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
 html{
     font-size: 62.5%;
 }
@@ -20,13 +24,12 @@ button{
 header{
     display: flex;
     justify-content: space-between;
-    margin: 5.3vh 9vw 5.3vh 9vw;
-    align-items: center;   
+    padding: 5.3vh 9vw 5.3vh 9vw;
 }
 header img{
     cursor: pointer;
 }
-nav{
+nav{    
     display: flex;
     width: 43vw;
     justify-content: space-between;
@@ -417,6 +420,51 @@ footer p{
         line-height: 1.6rem;
         color: #444A4A;
     }
+    /* menu hamburguer */
+    header{
+        background-color: white;
+        margin: 0px;
+        padding: 0px;
+        padding-top: 35px;
+        justify-content: space-around;
+        align-items: center;
+        position:fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+    header #nav.active{
+        justify-content: center;
+    }
+    #nav.active button{
+        display: none;
+    }
+    #nav.active{
+        margin: 0px;
+        position:fixed;
+        top: 7.6%;
+        width: 100%;
+        height: calc(100%-78);
+        background: white;
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+        z-index: 1000;
+        padding-top: 66px;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #nav.active p a{
+        font-weight: 700;
+        font-size: 3.6rem;
+        line-height: 3.6rem;
+    }
+    #btnMbl{
+        background-color: white;
+    }
+    .icons-nav{
+        display: flex;
+        gap:27px;
+    }
 
 }
 
@@ -443,5 +491,7 @@ footer p{
     #btnMbl{
         display: none;
     }
- 
+    .icons-nav{
+        display: none;
+    }
 }
