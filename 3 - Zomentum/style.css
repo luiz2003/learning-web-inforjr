@@ -8,6 +8,9 @@
 html{
     font-size: 62.5%
 }
+button{
+    cursor: pointer;
+}
 
 header{
     top: 0;
@@ -40,6 +43,7 @@ nav button{
     text-align: center;
 }
 .hero{
+    padding-top: 14.7rem;
     background-color: #2F70FE;
     color: black;
     display: flex;
@@ -47,6 +51,36 @@ nav button{
     align-items: center;
 }
 .heroTitle{
+    width: 50vw;
     text-align: center;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+}
+.heroTitle h1{
+    font-size: 4.8rem;
+    line-height: 6.5rem;
+}
+.heroTitle p{
+    font-size: 1.6rem;
+    line-height: 3rem;
+    width: 42vw;
+}
+.heroExtra{
+    width: calc(100% - 18rem);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 9rem;
+}
+.heroExtra button{
+    margin-top: 3.3rem;
+    max-height: 5.1rem;
+    padding: 1.6rem 2.5rem;
+    color: white;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    font-weight: bold;
+    background-color: black;
 }
