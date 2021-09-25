@@ -8,6 +8,7 @@
 html{
     font-size: 62.5%
 }
+
 button{
     cursor: pointer;
 }
@@ -29,7 +30,7 @@ nav{
     align-items: center;
 }
 nav a {
-    color: black;
+    color:#000C2D;
     line-height: 2.1rem;
     font-size: 1.4rem;
     letter-spacing: 0.03em;
@@ -45,7 +46,7 @@ nav button{
 .hero{
     padding-top: 14.7rem;
     background-color: #2F70FE;
-    color: black;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,6 +85,7 @@ nav button{
     font-weight: bold;
     background-color: black;
 }
+
 .intro{
     width: 100%;
     padding-top: 7.9rem;
@@ -93,6 +95,7 @@ nav button{
     gap: 3.1rem;
     padding-bottom: 10.7rem;
 }
+
 .intro h1{
     font-weight: 500;
     font-size: 4.0rem;
@@ -120,4 +123,38 @@ nav button{
     font-size: 1.6rem;
     line-height: 2.7rem;
     letter-spacing: 0.01em;
+}
+.card{
+    display: flex;
+    width: 100%;
+    padding: 6.5rem 0rem ;
+    justify-content: space-around;
+    align-items: center;
+}
+.card-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    width: 28.5vw;
+}
+.card-txt h2{
+    font-weight: bold;
+    font-size: 2.8rem;
+    line-height: 3.7rem;
+    width: 30vw;
+}
+.card-txt p{
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    letter-spacing: 0.01em;
+    color: #000C2D;
+}
+.card-txt a{
+    color:#2F70FE;
+    font-weight: 500;  
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
 }
