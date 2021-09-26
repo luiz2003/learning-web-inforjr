@@ -195,6 +195,10 @@ footer h1{
     display: flex;
     gap: 8vw;
 }
+#footer3{
+    display: flex;
+    gap: 8vw;  
+}
 .footer-block{
     display: flex;
     flex-direction: column;
@@ -298,28 +302,24 @@ footer h1{
     }
     
     .footer-links{
-        flex-direction: column;
-        gap: 6rem;
+        max-width: 289px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
         width: 100%;
-        align-items: center;
+        align-items: flex-start;
     }
     .footer-block{
-        gap: 0px;
+        gap: 2.4rem;
         justify-content: center;
     }
-    #footer1{
-        align-items: flex-start;
-        gap: 0px;
-        justify-content: space-evenly;
+
+    #footer3{
         width: 100%;
-    }
-    #footer2{
-        align-items: flex-start;
         gap: 0px;
-        justify-content: space-evenly;
-        width: 100%;
-        
+        justify-content: space-between;
     }
+
 }
 @media (min-width: 768px) {
     #btnMbl{
