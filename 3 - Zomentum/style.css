@@ -214,6 +214,7 @@ footer h1{
         justify-content: space-evenly;
         position: sticky;
         width: 100%;
+        flex-wrap: wrap;
     }
     #nav.active{
         background-color: white;
@@ -223,8 +224,24 @@ footer h1{
         align-items: center;
         justify-content: space-evenly;
         width: 100%;
-        height: calc(100% - 8rem);
-
+        height: calc(100vh - 6rem);
+        align-self: flex-end;
+    }
+    #nav.active a{
+        font-weight: 500;
+    font-size: 3.6rem;
+    line-height: 5.4rem;        
+    letter-spacing: 0.03em;
+    }
+    #nav.active button{
+        font-weight: 500;
+        font-size: 3.6rem;
+        line-height: 5.4rem;
+        letter-spacing: 0.03em;
+        border: none;
+    }
+    .hero img{
+        display: none;
     }
     
 }

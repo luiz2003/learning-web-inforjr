@@ -1,4 +1,7 @@
 <svg width="27" height="21" viewBox="0 0 27 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="27" height="21" fill="#E5E5E5"/>
+<rect width="375" height="4594" transform="translate(-295 -29)" fill="white"/>
+<rect x="-295" y="-29" width="375" height="80" fill="white"/>
 <rect width="27" height="1.61538" rx="0.807692" fill="#141414"/>
 <rect y="9.69238" width="27" height="1.61538" rx="0.807692" fill="#141414"/>
 <rect y="19.3848" width="27" height="1.61538" rx="0.807692" fill="#141414"/>
