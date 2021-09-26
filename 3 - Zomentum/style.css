@@ -319,10 +319,20 @@ footer h1{
         gap: 0px;
         justify-content: space-between;
     }
-
+   
 }
 @media (min-width: 768px) {
     #btnMbl{
         display: none;
     } 
+}
+@media(max-width: 1030px){
+    .heroExtra img{
+        display: none;
+    }
+    .heroExtra{
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5.1rem;
+    }
 }
