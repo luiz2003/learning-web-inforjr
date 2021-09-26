@@ -274,6 +274,20 @@ footer h1{
     }
     .card{
         flex-direction: column;
+        align-items: center;
+    }
+    .card-txt{
+        width: calc(100% - 3rem);
+        text-align: center;
+    }
+    .card-txt h2{
+        width: calc(100% - 1.8rem);
+        text-align: center;
+    }
+    .card-txt a{
+        text-align: center;
+        display: flex;
+        justify-content: center;
     }
     .cardInv{
         flex-direction: column-reverse;
