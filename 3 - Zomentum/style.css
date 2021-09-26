@@ -272,6 +272,10 @@ footer h1{
         flex-direction: column;
         align-items: center;
     }
+    .intro-block p{
+        height: 5.4rem;
+        width: 22.3rem;
+    }
     .card{
         flex-direction: column;
         align-items: center;
