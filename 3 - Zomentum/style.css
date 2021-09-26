@@ -258,8 +258,7 @@ footer h1{
         display: none;
     }
     .heroTitle{
-        width: 100%;
-        padding: 0rem 1.8rem;
+        width: calc(100% - 1.8rem);  
     }
     .hero p{
         width: calc(100% - 1.8rem);    
@@ -272,6 +271,12 @@ footer h1{
     .intro-icons{
         flex-direction: column;
         align-items: center;
+    }
+    .card{
+        flex-direction: column;
+    }
+    .cardInv{
+        flex-direction: column-reverse;
     }
 }
 @media (min-width: 768px) {
