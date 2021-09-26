@@ -278,6 +278,16 @@ footer h1{
     .cardInv{
         flex-direction: column-reverse;
     }
+    
+    .footer-links{
+        flex-direction: column;
+        gap: 6rem;
+        
+    }
+    .footer-block{
+        gap: 0px;
+        justify-content: center;
+    }
 }
 @media (min-width: 768px) {
     #btnMbl{
