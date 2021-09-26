@@ -300,11 +300,25 @@ footer h1{
     .footer-links{
         flex-direction: column;
         gap: 6rem;
-        
+        width: 100%;
+        align-items: center;
     }
     .footer-block{
         gap: 0px;
         justify-content: center;
+    }
+    #footer1{
+        align-items: flex-start;
+        gap: 0px;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    #footer2{
+        align-items: flex-start;
+        gap: 0px;
+        justify-content: space-evenly;
+        width: 100%;
+        
     }
 }
 @media (min-width: 768px) {
