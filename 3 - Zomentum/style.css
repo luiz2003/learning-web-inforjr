@@ -228,19 +228,23 @@ footer h1{
         flex-wrap: wrap;
         padding-left: 0px;
         padding-right: 0px;
+        z-index: 1000;
     }
     #nav.active{
+        display: block;
         overflow-y: hidden;
         overflow-x: hidden;
         background-color: white;
         position: sticky;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        justify-content: space-evenly;
+        gap: 4.3rem;
         width: 100%;
-        height: calc(100vh - var(--headerHeight));
+        height: calc(110vh - var(--headerHeight));
         align-self: flex-end;
+        z-index: 1000;
     }
     #nav.active a{
         font-weight: 500;
@@ -300,16 +304,21 @@ footer h1{
     .cardInv{
         flex-direction: column-reverse;
     }
+    footer{
+        justify-content: center;
+        width: 100%;
+    }
     
     .footer-links{
-        max-width: 289px;
+        row-gap: 6.2rem;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-evenly;
-        width: 100%;
+        justify-content: flex-start;
+        width: 90%;
         align-items: flex-start;
     }
     .footer-block{
+        width: 140px;
         gap: 2.4rem;
         justify-content: center;
     }
