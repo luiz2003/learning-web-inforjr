@@ -1,3 +1,5 @@
+AOS.init()
+
 let header = document.getElementById('header')
 let nav = document.getElementById('nav')
 let root = document.documentElement;

@@ -6,7 +6,7 @@
     margin: 0px;
     border: 0px;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; 
 }
 html{
     font-size: 62.5%
@@ -19,7 +19,7 @@ button{
 header{
     top: 0;
     display: flex;
-    position: sticky;
+    position: fixed;
     justify-content: space-between;
     padding: 1.6rem 7rem;
     background-color: white;
@@ -66,6 +66,7 @@ nav button{
 .heroTitle h1{
     font-size: 4.8rem;
     line-height: 6.5rem;
+    overflow-y: hidden;
 }
 .heroTitle p{
     font-size: 1.6rem;
@@ -129,6 +130,9 @@ nav button{
     line-height: 2.7rem;
     letter-spacing: 0.01em;
 }
+.cards-area{
+    overflow-x: hidden;
+}
 .card{
     display: flex;
     width: 100%;
@@ -147,6 +151,7 @@ nav button{
     font-size: 2.8rem;
     line-height: 3.7rem;
     width: 30vw;
+    overflow-y: hidden;
 }
 .card-txt p{
     font-size: 1.6rem;
@@ -226,6 +231,8 @@ footer h1{
     header{
         justify-content: space-evenly;
         position: sticky;
+        position: -webkit-sticky;
+        top: 0; /* required */
         width: 100%;
         flex-wrap: wrap;
         padding-left: 0px;
@@ -338,6 +345,12 @@ footer h1{
         background-color: white;
         padding:0px;
         margin:0px;
+   }
+   .intro-block{
+       width: 100%;
+   }
+   .cards-area{
+       overflow-x: hidden;
    }
 }
 @media (min-width: 768px) {
