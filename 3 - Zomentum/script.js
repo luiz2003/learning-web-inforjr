@@ -143,6 +143,7 @@ data-aos-delay="25">
 
 
 `
+document.getElementById("year").innerHTML = new Date().getFullYear();
 AOS.init()
 let header = document.getElementById('header')
 let nav = document.getElementById('nav')
