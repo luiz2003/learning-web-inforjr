@@ -140,7 +140,7 @@ data-aos-delay="25">
     document.getElementById("year").innerHTML = new Date().getFullYear();
 </script>
 </footer>
-<script src="script.js"></script>
+
 
 `
 AOS.init()
