@@ -9,7 +9,7 @@
 html{
     font-size: 62.5%
 }
-
+/* ______________HEADER ______________ */
 header{
     background-color: #965A1B;
     display: flex;
@@ -17,13 +17,13 @@ header{
     align-items: center;
     padding: 5.56vh 0rem 12.52vh 0rem;
 }
+/* _____________TRANSACTION_____________ */
 .transactions{
     margin-top: -6.9rem;
     display: flex;
     justify-content: center;
     width: 100%;
     gap: 2.5rem;
-    z-index: 1000;
 }
 .transaction-card{
     display: flex;
@@ -50,8 +50,62 @@ header{
     background: #5F3305;
     color: white;
 }
+/* _______________QUEUE-AREA____________ */
 .cards-area{
     margin-top: -6.9rem;
     background-color: #E5CF94;
     height: calc(100vh - (18.08vh + 113px));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.queue{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 64vw;
+}
+.queue h2{
+    color: #5F3305;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+.client-card{
+    background-color: white;
+    padding: 1.5rem 1.5rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.client-card-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+}
+.client-card h3{
+    font-size: 12px;
+    line-height: 18px;
+    color: #5F3305;
+    display: flex;
+    gap: 3px;
+}
+.client-card h3 p{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    display: flex;
+    gap: 3px;
+}
+
+.client-card-info{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+#deleteBtn{
+    width: 24px;
+    cursor: pointer;
 }
