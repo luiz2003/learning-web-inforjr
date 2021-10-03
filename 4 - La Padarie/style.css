@@ -54,13 +54,15 @@ header{
 .cards-area{
     margin-top: -6.9rem;
     background-color: #E5CF94;
-    height: calc(100vh - (18.08vh + 113px));
+    min-height: calc(100vh - (18.08vh + 113px));
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    gap: 8rem;
 }
 .queue{
+    margin-top: calc(6.9rem + 8rem);
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
@@ -108,4 +110,13 @@ header{
 #deleteBtn{
     width: 24px;
     cursor: pointer;
+}
+
+/* __________FOOTER_________ */
+footer{
+    padding-bottom: 80px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #5F3305;
 }
