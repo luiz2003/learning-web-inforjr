@@ -134,6 +134,10 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
+}
+.modal-overlay.active{
+    display: flex;
 }
 .modal{
     background-color: white;

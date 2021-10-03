@@ -63,12 +63,12 @@
         <footer>
             <p>Com 💛 Info Jr UFBA 2021</p>
         </footer>
-        <div class="modal-overlay">
-            <div class="modal">
+        <div class="modal-overlay" id="modal">
+            <div class="modal" >
                 <div class="modal-content">
                     <h2>Adicionar pessoa a fila</h2>
-                    <input type="text" placeholder="Nome completo do cliente">
-                    <input type="text" placeholder="Total de pães:">
+                    <input type="text" id="nameInput" placeholder="Nome completo do cliente">
+                    <input type="text" id="breadInput" placeholder="Total de pães:">
                 </div>
                 <div class="button-area">
                     <button id="sendBtn">Enviar</button> <button id="cancelBtn">Cancelar</button>
@@ -76,5 +76,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
