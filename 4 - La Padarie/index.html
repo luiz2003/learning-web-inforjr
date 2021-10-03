@@ -46,7 +46,7 @@
 
     <div class="cards-area">
         <div class="queue">
-            <h2>+ Adicionar pessoa a fila</h2>
+            <h2 id="addBtn">+ Adicionar pessoa a fila</h2>
             
             <div class="client-card">
                 <div class="client-card-text">
@@ -63,7 +63,18 @@
         <footer>
             <p>Com 💛 Info Jr UFBA 2021</p>
         </footer>
-        
+        <div class="modal-overlay">
+            <div class="modal">
+                <div class="modal-content">
+                    <h2>Adicionar pessoa a fila</h2>
+                    <input type="text" placeholder="Nome completo do cliente">
+                    <input type="text" placeholder="Total de pães:">
+                </div>
+                <div class="button-area">
+                    <button id="sendBtn">Enviar</button> <button id="cancelBtn">Cancelar</button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
