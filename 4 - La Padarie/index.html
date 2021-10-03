@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
     <title>La paderie</title>
 </head>
@@ -44,8 +45,8 @@
     </div>
     
 
-    <div class="cards-area">
-        <div class="queue">
+    <div class="cards-area" >
+        <div class="queue" id="queue">
             <h2 id="addBtn">+ Adicionar pessoa a fila</h2>
             
             <div class="client-card">
@@ -68,7 +69,7 @@
                 <div class="modal-content">
                     <h2>Adicionar pessoa a fila</h2>
                     <input type="text" id="nameInput" placeholder="Nome completo do cliente">
-                    <input type="text" id="breadInput" placeholder="Total de pães:">
+                    <input type="number" id="breadInput" placeholder="Total de pães:">
                 </div>
                 <div class="button-area">
                     <button id="sendBtn">Enviar</button> <button id="cancelBtn">Cancelar</button>
