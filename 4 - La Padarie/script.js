@@ -20,24 +20,15 @@ cancelBtn.addEventListener('click',untoggleMenu)
 let clientCards = [
     
 ]
-function values(){
+
+function render(){
+    let queue = document.getElementById('queue')
     let queueLenght = document.getElementById('queueLenght')
     let breadAmount = document.getElementById('breadAmount')
     let moneyInflux = document.getElementById('moneyInflux')
     queueLenght.value = 0
     breadAmount.value = 0
     moneyInflux.value = 0
-    clientCards.forEach((card)=>{
-        queueLenght.value = clientCards.length
-        breadAmount.value += Number(card.breadAmount)
-        moneyInflux.value += card.clientInflux
-    })
-    queueLenght.innerHTML = queueLenght.value
-    breadAmount.innerHTML  = breadAmount.value
-    moneyInflux.innerHTML = moneyInflux.value
-}
-function render(){
-    let queue = document.getElementById('queue')
     queue.innerHTML = ""
     clientCards.forEach((card)=>{
         queue.innerHTML += 
@@ -54,7 +45,13 @@ function render(){
     <img id="deleteBtn" src="images/delete-icon.svg" alt="">
     </div>
         `
+        queueLenght.value = clientCards.length
+        breadAmount.value += Number(card.breadAmount)
+        moneyInflux.value += card.clientInflux
     })
+    queueLenght.innerHTML = queueLenght.value
+    breadAmount.innerHTML  = breadAmount.value
+    moneyInflux.innerHTML = moneyInflux.value
 }
 function addClientCard(){
     let clientName = document.getElementById('nameInput').value
@@ -81,7 +78,6 @@ function addClientCard(){
         breadInput.value=""
     }
     render()
-    values()
 }
 
 
