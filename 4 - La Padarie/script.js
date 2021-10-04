@@ -16,6 +16,13 @@ function untoggleMenu() {
 }
 addBtn.addEventListener('click',toggleMenu)
 cancelBtn.addEventListener('click',untoggleMenu)
+let sendBtn = document.getElementById('sendBtn')
+let breadInput = document.getElementById('breadInput')
+breadInput.addEventListener('keyup',(event) => {
+    event.preventDefault();
+    if (event.keyCode === 13) 
+        document.getElementById("sendBtn").click();
+});
 
 let clientCards = [
     
