@@ -26,11 +26,19 @@ breadInput.addEventListener('keydown',(event) => {
         document.getElementById("sendBtn").click();
         event.preventDefault();
     }
+    else if(event.keyCode === 27){
+        event.preventDefault()
+        document.getElementById("cancelBtn").click();
+    }
 });
 nameInput.addEventListener('keydown',(event) => {
     if (event.keyCode === 13){ 
         event.preventDefault();
         document.getElementById("sendBtn").click();
+    }
+    else if(event.keyCode === 27){
+        event.preventDefault()
+        document.getElementById("cancelBtn").click();
     }
 });
 
