@@ -22,6 +22,7 @@ let clientCards = [
 ]
 function render(){
     let queue = document.getElementById('queue')
+    queue.innerHTML = ""
     clientCards.forEach((card)=>{
         queue.innerHTML += 
         `
