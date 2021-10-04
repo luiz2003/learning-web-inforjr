@@ -20,6 +20,25 @@ cancelBtn.addEventListener('click',untoggleMenu)
 let clientCards = [
     
 ]
+function render(){
+    let queue = document.getElementById('queue')
+    clientCards.forEach((card)=>{
+        queue.innerHTML += 
+        `
+        
+        <div class="client-card">
+        <div class="client-card-text">
+            <h2 id="clientName">${card.clientName}</h2>
+            <div class="client-card-info">
+                <h3>Total de pães: <p><span id="clientBread">${card.breadAmount}</span>pães</p> </h3> 
+                <h3>Total a pagar: <p><span id="clientInflux">R$ ${(card.breadAmount)/2}</span></p></h3>
+            </div>
+        </div>
+    <img id="deleteBtn" src="images/delete-icon.svg" alt="">
+    </div>
+        `
+    })
+}
 function addClientCard(){
     let clientName = document.getElementById('nameInput').value
     let breadAmount = document.getElementById('breadInput').value
@@ -44,23 +63,7 @@ function addClientCard(){
         nameInput.value =""
         breadInput.value=""
     }
-    let queue = document.getElementById('queue')
-    clientCards.forEach((card)=>{
-        queue.innerHTML += 
-        `
-        
-        <div class="client-card">
-        <div class="client-card-text">
-            <h2 id="clientName">${card.clientName}</h2>
-            <div class="client-card-info">
-                <h3>Total de pães: <p><span id="clientBread">${card.breadAmount}</span>pães</p> </h3> 
-                <h3>Total a pagar: <p><span id="clientInflux">R$ ${(card.breadAmount)/2}</span></p></h3>
-            </div>
-        </div>
-    <img id="deleteBtn" src="images/delete-icon.svg" alt="">
-    </div>
-        `
-    })
+    render()
 }
 
 
