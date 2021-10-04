@@ -1,10 +1,12 @@
+//modal script
 const addBtn = document.getElementById('addBtn')
 const cancelBtn = document.getElementById('cancelBtn')
 const modal =  document.getElementById('modal')
 function toggleMenu() {
     
     modal.classList.toggle('active')
-
+    document.getElementById("nameInput").focus()
+   
 }
 function untoggleMenu() {
     let nameInput = document.getElementById('nameInput')
@@ -18,12 +20,21 @@ addBtn.addEventListener('click',toggleMenu)
 cancelBtn.addEventListener('click',untoggleMenu)
 let sendBtn = document.getElementById('sendBtn')
 let breadInput = document.getElementById('breadInput')
-breadInput.addEventListener('keyup',(event) => {
-    event.preventDefault();
-    if (event.keyCode === 13) 
+let nameInput = document.getElementById('nameInput')
+breadInput.addEventListener('keydown',(event) => { 
+    if (event.keyCode === 13){
         document.getElementById("sendBtn").click();
+        event.preventDefault();
+    }
+});
+nameInput.addEventListener('keydown',(event) => {
+    if (event.keyCode === 13){ 
+        event.preventDefault();
+        document.getElementById("sendBtn").click();
+    }
 });
 
+// card rendering and updating 
 let clientCards = [
     
 ]
@@ -86,6 +97,3 @@ function addClientCard(){
     }
     render()
 }
-
-
- 
