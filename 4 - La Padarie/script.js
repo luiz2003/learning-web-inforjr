@@ -42,7 +42,7 @@ nameInput.addEventListener('keydown',(event) => {
     }
 });
 
-// card rendering and updating 
+// card rendering and updating scripts
 let clientCards = [
     
 ]
@@ -57,23 +57,25 @@ function render(){
     moneyInflux.value = 0
     queue.innerHTML = ""
     clientCards.forEach((card)=>{
+        card.id = clientCards.indexOf(card) 
         queue.innerHTML += 
         `
         
-        <div class="client-card">
-        <div class="client-card-text">
-            <h2 id="clientName">${card.clientName}</h2>
-            <div class="client-card-info">
-                <h3>Total de pães: <p><span id="clientBread">${card.breadAmount}</span>pães</p> </h3> 
-                <h3>Total a pagar: <p><span id="clientInflux">R$ ${(card.breadAmount)/2}</span></p></h3>
+        <div class="client-card" id =${card.id}>
+            <div class="client-card-text">
+                <h2 id="clientName">${card.clientName}</h2>
+                <div class="client-card-info">
+                    <h3>Total de pães: <p><span id="clientBread">${card.breadAmount}</span>pães</p> </h3> 
+                    <h3>Total a pagar: <p><span id="clientInflux">R$ ${(card.breadAmount)/2}</span></p></h3>
+                </div>
             </div>
+            <img id="deleteBtn" onclick="removeCard(${card.id})" src="images/delete-icon.svg" alt="">
         </div>
-    <img id="deleteBtn" src="images/delete-icon.svg" alt="">
-    </div>
         `
         queueLenght.value = clientCards.length
         breadAmount.value += Number(card.breadAmount)
         moneyInflux.value += card.clientInflux
+        
     })
     queueLenght.innerHTML = queueLenght.value
     breadAmount.innerHTML  = breadAmount.value
@@ -82,6 +84,7 @@ function render(){
 function addClientCard(){
     let clientName = document.getElementById('nameInput').value
     let breadAmount = document.getElementById('breadInput').value
+    
     let nameInput = document.getElementById('nameInput')
     let breadInput = document.getElementById('breadInput')
     
@@ -103,5 +106,9 @@ function addClientCard(){
         nameInput.value =""
         breadInput.value=""
     }
+    render()
+}
+function removeCard(index){
+    clientCards.splice(index,1)
     render()
 }
