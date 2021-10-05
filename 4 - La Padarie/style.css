@@ -83,6 +83,9 @@ h2{
     font-size: 16px;
     line-height: 24px;
 }
+.queue-container h2{
+    width: max-content;
+}
 #addBtn{
     cursor: pointer;
 }
@@ -198,9 +201,6 @@ input{
 
 /* _________RESPONSIVENESS___________ */
 @media (max-width:768px){
-    .header{
-
-    }
     .transactions{
         flex-direction: column;
         width: 100%;
@@ -213,11 +213,12 @@ input{
         width: 100%;
     }
     .queue-container{
-        width: 80%;
+        width: 89%;
     }
     .queue{
         width: 100%;
     }
+    
     .client-card-info{
         display: flex;
         flex-direction: column;

@@ -103,8 +103,6 @@ function addClientCard(){
     }
     else{
         window.alert("Por favor insira valores válidos")
-        nameInput.value =""
-        breadInput.value=""
     }
     render()
 }
