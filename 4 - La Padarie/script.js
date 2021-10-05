@@ -66,7 +66,7 @@ function render(){
                 <h2 id="clientName">${card.clientName}</h2>
                 <div class="client-card-info">
                     <h3>Total de pães: <p><span id="clientBread">${card.breadAmount}</span>pães</p> </h3> 
-                    <h3>Total a pagar: <p><span id="clientInflux">R$ ${(card.breadAmount)/2}</span></p></h3>
+                    <h3>Total a pagar: <p><span id="clientInflux">${((card.breadAmount)/2).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</span></p></h3>
                 </div>
             </div>
             <img id="deleteBtn" onclick="removeCard(${card.id})" src="images/delete-icon.svg" alt="">
@@ -79,7 +79,7 @@ function render(){
     })
     queueLenght.innerHTML = queueLenght.value
     breadAmount.innerHTML  = breadAmount.value
-    moneyInflux.innerHTML = moneyInflux.value
+    moneyInflux.innerHTML = moneyInflux.value.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
 }
 function addClientCard(){
     let clientName = document.getElementById('nameInput').value
