@@ -195,3 +195,40 @@ input{
     padding: 0 13px;
     height: 50px;
 }
+
+/* _________RESPONSIVENESS___________ */
+@media (max-width:768px){
+    .header{
+
+    }
+    .transactions{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .transaction-card{
+        min-width:80%;
+    }
+    .tr-card-header{
+        width: 100%;
+    }
+    .queue-container{
+        width: 80%;
+    }
+    .queue{
+        width: 100%;
+    }
+    .client-card-info{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+    }
+    .modal-content{
+        align-items: center;
+    }
+    .button-area{
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
