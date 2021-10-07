@@ -19,52 +19,54 @@
         <img src="images/Logo.svg" alt="">
     </header>
         
-    <div class="transactions">
-        <div class="transaction-card">
-            <div class="tr-card-header">
-                <p>Pessoas na fila</p> <img src="images/ppl-icon.svg" alt="">
+    <div class="transactions-queue">
+        <div class="transactions">
+            <div class="transaction-card">
+                <div class="tr-card-header">
+                    <p>Pessoas na fila</p> <img src="images/ppl-icon.svg" alt="">
+                </div>
+                <h1 id="queueLenght">0</h1>
             </div>
-            <h1 id="queueLenght">0</h1>
-        </div>
-        
-        <div class="transaction-card">
-            <div class="tr-card-header">
-                <p>Pães Vendidos</p> <img src="images/shop-cart-icon.svg" alt="">
-            </div>
-            <h1 id="breadAmount">0</h1>
-
-        </div>
-        
-        <div class="transaction-card brown-card">
-            <div class="tr-card-header">
-                <p>Entrada</p> <img src="images/money-icon.svg" alt="">
-            </div>
-            <h1 ><span id="moneyInflux">R$ 0,00</span></h1>
-        </div>
-
-    </div>
-    
-
-    <div class="cards-area" >
-        <div class="queue-container">
-            <h2 id="addBtn">+ Adicionar pessoa a fila</h2>
-            <div class="queue" id="queue">
             
-               
+            <div class="transaction-card">
+                <div class="tr-card-header">
+                    <p>Pães Vendidos</p> <img src="images/shop-cart-icon.svg" alt="">
+                </div>
+                <h1 id="breadAmount">0</h1>
+    
+            </div>
+            
+            <div class="transaction-card brown-card">
+                <div class="tr-card-header">
+                    <p>Entrada</p> <img src="images/money-icon.svg" alt="">
+                </div>
+                <h1 ><span id="moneyInflux">R$ 0,00</span></h1>
             </div>
     
-            <footer>
-                <p>Com 💛 Info Jr UFBA 2021</p>
-            </footer>
-            <div class="modal-overlay" id="modal">
-                <div class="modal" >
-                    <div class="modal-content">
-                        <h2>Adicionar pessoa a fila</h2>
-                        <input type="text" id="nameInput" placeholder="Nome completo do cliente">
-                        <input type="number" min='1' id="breadInput" placeholder="Total de pães:">
-                    </div>
-                    <div class="button-area">
-                        <button id="sendBtn" onclick="addClientCard()">Enviar</button> <button id="cancelBtn">Cancelar</button>
+        </div>
+        
+    
+        <div class="cards-area" >
+            <div class="queue-container">
+                <h2 id="addBtn">+ Adicionar pessoa a fila</h2>
+                <div class="queue" id="queue">
+                
+                   
+                </div>
+        
+                <footer>
+                    <p>Com 💛 Info Jr UFBA 2021</p>
+                </footer>
+                <div class="modal-overlay" id="modal">
+                    <div class="modal" >
+                        <div class="modal-content">
+                            <h2>Adicionar pessoa a fila</h2>
+                            <input type="text" id="nameInput" placeholder="Nome completo do cliente">
+                            <input type="number" min='1' id="breadInput" placeholder="Total de pães:">
+                        </div>
+                        <div class="button-area">
+                            <button id="sendBtn" onclick="addClientCard()">Enviar</button> <button id="cancelBtn">Cancelar</button>
+                        </div>
                     </div>
                 </div>
             </div>
