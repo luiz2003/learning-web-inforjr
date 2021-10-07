@@ -211,6 +211,12 @@ input{
 
 /* _________RESPONSIVENESS___________ */
 @media (max-width:768px){
+    .transaction-card{
+        padding: 2rem 2.5rem;
+    }
+    .client-card{
+        padding: 2 2.5rem;
+    }
     .transactions-queue{
         width: 80vw;
     }
@@ -221,6 +227,10 @@ input{
     }
     .transaction-card{
         width: 100%;
+    }
+    .tr-card-header{
+        width: 100%;
+
     }
    
     .client-card{
