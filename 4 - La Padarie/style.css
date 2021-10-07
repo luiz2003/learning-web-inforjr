@@ -211,22 +211,13 @@ input{
 
 /* _________RESPONSIVENESS___________ */
 @media (max-width:768px){
-    .transaction-card{
-        padding: 2rem 2.5rem;
-    }
-    .client-card{
-        padding: 2 2.5rem;
-    }
-    .transactions-queue{
-        width: 80vw;
-    }
     .transactions{
         flex-direction: column;
         width: 100%;
         align-items: center;
     }
     .transaction-card{
-        width: 100%;
+        width: 80vw;
     }
     .tr-card-header{
         width: 100%;
@@ -234,7 +225,7 @@ input{
     }
    
     .client-card{
-        width: 100%;
+        width: fit-content;
     }
     .client-card-info{
         display: flex;
