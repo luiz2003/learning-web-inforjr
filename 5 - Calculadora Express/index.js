@@ -11,25 +11,25 @@ function math(num1,num2){
 app.use(express.static(path.join(__dirname,'public')))
 
 //routing and math
-app.get('/adicionar/:num1/:num2',(req,res)=>{
+app.get('/sum/:num1/:num2',(req,res)=>{
   let num1 = parseFloat(req.params.num1)
   let num2 = parseFloat(req.params.num2)
   result = (num1+num2).toString()
   res.send(result)
 })
-app.get('/subtrair/:num1/:num2',(req,res)=>{
+app.get('/subtract/:num1/:num2',(req,res)=>{
   let num1 = parseFloat(req.params.num1)
   let num2 = parseFloat(req.params.num2)
   result = (num1-num2).toString()
   res.send(result)
 })
-app.get('/multiplicar/:num1/:num2',(req,res)=>{
+app.get('/multiply/:num1/:num2',(req,res)=>{
   let num1 = parseFloat(req.params.num1)
   let num2 = parseFloat(req.params.num2)
   result = (num1*num2).toString()
   res.send(result)
 })
-app.get('/dividir/:num1/:num2',(req,res)=>{
+app.get('/divide/:num1/:num2',(req,res)=>{
   let num1 = parseFloat(req.params.num1)
   let num2 = parseFloat(req.params.num2)
   result = (num1/num2).toString()
