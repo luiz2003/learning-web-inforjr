@@ -7,14 +7,17 @@
     <title>Calculator</title>
 </head>
 <body>
-    <form action="">
+    <div>
         <input type="number" id="num1" placeholder="1st number">
         <input type="number" id="num2" placeholder="2nd number"><br>
-        <input type="button" id="add" value="Sum">
-        <input type="button" id="sub" value="Subtract">
-        <input type="button" id="multi" value="Multiply">
-        <input type="button" id="divide" value="Divide"><br>
-        <input type="submit" value="Calculate!">
-    </form>
+        <button onclick="sumSelect()">Add</button>
+        <button onclick="subSelect()" >Subtract</button>
+        <button onclick="mulSelect()">Multiply</button>
+        <button onclick="divSelect()">Divide</button>
+        <br>
+        <button onclick="calculate()" >Calculate!</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
