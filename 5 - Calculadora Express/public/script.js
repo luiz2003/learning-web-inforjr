@@ -32,7 +32,13 @@ function divSelect(){
 function calculate(){
     let num1 = document.getElementById('num1').value;
     let num2 = document.getElementById('num2').value;
-    if(sum){
+    if(num1 == '' || num2==''){
+        window.alert("Please give 2 numbers")
+    }
+    else if(!sum && !sub && !mul && !div){
+        window.alert("Plese, select an operation")
+    }
+    else if(sum){
         window.location.href = `http://localhost:3000/sum/${num1}/${num2}`;
     }
     else if(sub){
