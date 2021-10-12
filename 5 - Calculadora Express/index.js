@@ -4,9 +4,6 @@ const app = express()
 const port = 3000
 const path = require('path')
 
-function math(num1,num2){
-
-}
 //static folder
 app.use(express.static(path.join(__dirname,'public')))
 

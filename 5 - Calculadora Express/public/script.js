@@ -36,7 +36,7 @@ function calculate(){
         window.alert("Please give 2 numbers")
     }
     else if(!sum && !sub && !mul && !div){
-        window.alert("Plese, select an operation")
+        window.alert("Please, select an operation")
     }
     else if(sum){
         window.location.href = `http://localhost:3000/sum/${num1}/${num2}`;
