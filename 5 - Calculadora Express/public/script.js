@@ -12,33 +12,6 @@ let divBtn = document.getElementById('divBtn')
 let startColor = {r: 15, g:113, b:115};
 let endColor   = {r:  10, g: 71, b: 72};
 
-function reverseFade(){
-    buttons = [ 
-        {
-            bool : sum,
-            btn : addBtn
-        },
-        {
-            bool : sub,
-            btn : subBtn
-        },
-        {
-            bool : mul,
-            btn : mulBtn
-        },
-        {
-            bool : div,
-            btn : divBtn
-        }
-    ]
-    
-    buttons.forEach(button => {
-        if(button.bool){
-            fade(button.btn,endColor,startColor,150)
-        }
-    });
-}
-
 function sumSelect(){
     reverseFade()
     
@@ -104,10 +77,10 @@ function calculate(){
 
 }
 
-//fade to new color when selected script
+//fade to new color when selected functions
 lerp = function(a, b, u) {
     return (1 - u) * a + u * b;
-};
+}
 
 fade = function(element, start, end, duration) {
     var interval = 10;
@@ -126,4 +99,31 @@ fade = function(element, start, end, duration) {
         u += step_u;
     }, interval);
     console.log('interpolation!')
-};
+}
+
+function reverseFade(){
+    buttons = [ 
+        {
+            bool : sum,
+            btn : addBtn
+        },
+        {
+            bool : sub,
+            btn : subBtn
+        },
+        {
+            bool : mul,
+            btn : mulBtn
+        },
+        {
+            bool : div,
+            btn : divBtn
+        }
+    ]
+    
+    buttons.forEach(button => {
+        if(button.bool){
+            fade(button.btn,endColor,startColor,150)
+        }
+    });
+}
