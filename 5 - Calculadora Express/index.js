@@ -12,25 +12,25 @@ let result = 0;
 app.get('/sum/:num1/:num2',(req,res)=>{
   let num1 = parseFloat(req.params.num1)
   let num2 = parseFloat(req.params.num2)
-  result = (num1+num2).toString()
+  result = (num1+num2).toFixed(2)
   res.send(resultTemplate(result))
 })
 app.get('/subtract/:num1/:num2',(req,res)=>{
   let num1 = parseFloat(req.params.num1)
   let num2 = parseFloat(req.params.num2)
-  result = (num1-num2).toString()
+  result = (num1-num2).toFixed(2)
   res.send(resultTemplate(result))
 })
 app.get('/multiply/:num1/:num2',(req,res)=>{
   let num1 = parseFloat(req.params.num1)
   let num2 = parseFloat(req.params.num2)
-  result = (num1*num2).toString()
+  result = (num1*num2).toFixed(2)
   res.send(resultTemplate(result))
 })
 app.get('/divide/:num1/:num2',(req,res)=>{
   let num1 = parseFloat(req.params.num1)
   let num2 = parseFloat(req.params.num2)
-  result = (num1/num2).toString()
+  result = (num1/num2).toFixed(2)
   res.send(resultTemplate(result))
 })
 
@@ -109,7 +109,12 @@ return `
       text-align: center;
       font-weigth: 700;
     }
-  
+    
+    button:hover{
+      background-color: #2b2d42;
+      color: #0F7173;
+      border:solid 1px #0F7173;
+    }
     </style>
 </head>
 

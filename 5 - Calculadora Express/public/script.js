@@ -9,8 +9,63 @@ let subBtn = document.getElementById('subBtn')
 let mulBtn = document.getElementById('mulBtn')
 let divBtn = document.getElementById('divBtn')
 
+let buttons = [ 
+    {
+        bool : sum,
+        btn : addBtn,
+        sign : "+"
+    },
+    {
+        bool : sub,
+        btn : subBtn,
+        sign : "-"
+    },
+    {
+        bool : mul,
+        btn : mulBtn,
+        sign : "×"
+    },
+    {
+        bool : div,
+        btn : divBtn,
+        sign: "÷"
+    }
+]
+
 let startColor = {r: 15, g:113, b:115};
 let endColor   = {r:  10, g: 71, b: 72};
+
+function displaySignal(){
+    let buttons = [ 
+        {
+            bool : sum,
+            btn : addBtn,
+            sign : "+"
+        },
+        {
+            bool : sub,
+            btn : subBtn,
+            sign : "-"
+        },
+        {
+            bool : mul,
+            btn : mulBtn,
+            sign : "×"
+        },
+        {
+            bool : div,
+            btn : divBtn,
+            sign: "÷"
+        }
+    ]
+
+    buttons.forEach(button => {
+        if(button.bool){
+            document.getElementById('operation').innerHTML = button.sign;
+        }
+   })
+    
+}
 
 function sumSelect(){
     reverseFade()
@@ -20,7 +75,9 @@ function sumSelect(){
     mul = false;
     div = false; 
     
-    fade(addBtn,startColor,endColor,150)    
+    fade(addBtn,startColor,endColor,150) 
+    
+    displaySignal()   
 }
 function subSelect(){
     reverseFade()
@@ -30,7 +87,9 @@ function subSelect(){
     mul = false;
     div = false;
 
-    fade(subBtn,startColor,endColor,150)   
+    fade(subBtn,startColor,endColor,150)
+
+    displaySignal()   
 }
 function mulSelect(){
     reverseFade()
@@ -40,7 +99,9 @@ function mulSelect(){
     mul = true;
     div = false;
 
-    fade(mulBtn,startColor,endColor,150)   
+    fade(mulBtn,startColor,endColor,150)
+
+    displaySignal()   
 }
 function divSelect(){
     reverseFade()
@@ -50,7 +111,9 @@ function divSelect(){
     mul = false;
     div = true;
 
-    fade(divBtn,startColor,endColor,150)   
+    fade(divBtn,startColor,endColor,150)
+
+    displaySignal()   
 }
 //redirect to result script
 function calculate(){
@@ -98,26 +161,29 @@ fade = function(element, start, end, duration) {
         element.style.setProperty('background-color', colorname);
         u += step_u;
     }, interval);
-    console.log('interpolation!')
 }
 
 function reverseFade(){
-    buttons = [ 
+    let buttons = [ 
         {
             bool : sum,
-            btn : addBtn
+            btn : addBtn,
+            sign : "+"
         },
         {
             bool : sub,
-            btn : subBtn
+            btn : subBtn,
+            sign : "-"
         },
         {
             bool : mul,
-            btn : mulBtn
+            btn : mulBtn,
+            sign : "×"
         },
         {
             bool : div,
-            btn : divBtn
+            btn : divBtn,
+            sign: "÷"
         }
     ]
     
