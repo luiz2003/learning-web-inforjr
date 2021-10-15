@@ -57,6 +57,7 @@ Instalação
 #### Nodemon
 
 - [Nodemon - como configurar e utilizar - Programando Soluções](https://youtu.be/LscE7X8RcVs)
+- [Documentação](https://www.npmjs.com/package/nodemon)
 
 #### Express
 
@@ -65,6 +66,7 @@ Instalação
 Instalação
 
 - [Como instalar o Express no Node.js e criar rotas no Node.js - Celke](https://youtu.be/Wb4W0XvZ3h4)
+- [Documentação](https://expressjs.com/pt-br/starter/installing.html)
 
 Rotas
 
@@ -82,10 +84,9 @@ Status
 
 - [Como tratar erro 404 de rota ou página não existente no Express - Programando Soluções](https://youtu.be/icNqDrk9Ojo)
 
-#### Node-fetch
+#### Cross-fetch
 
-- [Node.js Básico 12 - Trabalhando com node-fetch - Ralf Lima](https://youtu.be/S3HHH4gYsmc)
-- [HTTP Requests using Node-Fetch - Node.js Tutorial - Jackson Yuan](https://youtu.be/iFUEQtQQQjM)
+- [Documentação](https://www.npmjs.com/package/cross-fetch)
 
 #### HTML
 
