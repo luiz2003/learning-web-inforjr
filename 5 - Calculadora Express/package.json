@@ -4,11 +4,15 @@
   "description": "- **Núcleo:** Web\r - **Orientadores:** [Lávio Vale](https://gitlab.com/lavio) e [Monique Silva](@moniquedsilva)\r - **Data da Atividade:** 09/10/2021\r - **Data de Entrega:** 16/10/2021",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "author": "luiz valverde",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
   }
 }
