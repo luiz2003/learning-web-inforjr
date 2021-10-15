@@ -19,6 +19,7 @@ A atividade não possui um mockup pré-definido, então toda a estrutura e estil
 
 - Key do TMDB - https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=04c35731a5ee918f014970082a0088b1&page=1
 - URL para obter imagens dos posters - https://image.tmdb.org/t/p/w500
+- URL para buscar filmes (não será obrigatório implementar o sistema de busca, é uma ferramenta adicional) - https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5ee918f014970082a0088b1&query=
 
 ---
 
