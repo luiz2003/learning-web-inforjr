@@ -1,4 +1,4 @@
-//rendering basic movie info on html
+//rendering basic movie info from api on html
 fetch('http://localhost:3000/api')
     .then(res => { 
        return res.json()

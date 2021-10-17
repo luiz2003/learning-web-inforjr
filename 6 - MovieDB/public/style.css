@@ -4,6 +4,7 @@
     border: 0px;
     text-decoration: none;
     color: #D2E3F4;
+    font-family: 'Work Sans', sans-serif;
 }
 body{
     background-color: #14181d;
@@ -17,8 +18,9 @@ body{
     flex-direction: column;
     margin-bottom: 20px;
     padding: 10px 20px;
-    background-color: #202830; /* a definir */
+    background-color: #202830;
     border-radius: 10px;
+    cursor:pointer;
 }
 .moviesArea{
     display: flex;
