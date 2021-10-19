@@ -21,6 +21,8 @@ body{
     background-color: #202830;
     border-radius: 10px;
     cursor:pointer;
+    height: max-content;
+    text-align: center;
 }
 .moviesArea{
     display: flex;
@@ -37,6 +39,7 @@ body{
     align-items: center;
     gap: 10px;
     height: 100%;
+
 }
 .title p{
     display: flex;
@@ -52,4 +55,31 @@ button img{
 }
 .description.active {
     display: block;
+    text-align: justify;
+    text-justify: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.description.description.active h2{
+    font-size: 16px;
+}
+.pageSelect{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+input{
+    background-color:#202830 ;
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
+    height: fit-content;
+    
+}
+#select{
+    border-radius: 5px;
+    height: fit-content;
+    padding: 5px 5px;
 }
