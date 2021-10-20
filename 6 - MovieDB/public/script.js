@@ -28,7 +28,7 @@ function render(page){
             document.getElementById('moviesArea').innerHTML+= `
                 <div class="movie-card">
                     <div class="title">
-                        <img class="poster"src="https://image.tmdb.org/t/p/w500${movie.poster_path}">
+                        <img class="poster" src="${movie.poster_path == null ? `images/arrow-down-sign-to-navigate.png`: `https://image.tmdb.org/t/p/w500${movie.poster_path}` }">
                         <p>${movie.title}</p>
                         <button onclick="expandCard(${data.results.indexOf(movie,0)})"><img src="images/arrow-down-sign-to-navigate.png" alt=""></button>
                     </div>
@@ -68,3 +68,47 @@ function expandCard(id){
     active.classList.toggle('active')
     console.log("active!")
 }
+
+// movieDB search engine
+searchBar = document.getElementById('searchBar')
+searchBar.addEventListener('keydown',(event)=>{
+    
+    query = searchBar.value;
+    if(event.keyCode=== 13 && query == ""){
+        window.alert("Please input your query")
+        console.log('oi')
+    }
+    else if(event.keyCode===13){
+        console.log('xau')
+        fetch( `https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5ee918f014970082a0088b1&query=${query}`)
+        .then(res => { 
+           return res.json()
+        })
+        .then(data => {
+            console.log(data)
+            document.getElementById('moviesArea').innerHTML = ``
+            data.results.forEach(movie => {
+                
+                document.getElementById('moviesArea').innerHTML+= `
+                    <div class="movie-card">
+                        <div class="title">
+                            <img class="poster"src="${movie.poster_path == null ? `images/arrow-down-sign-to-navigate.png`: `https://image.tmdb.org/t/p/w500${movie.poster_path}` }">
+                            <p>${movie.title}</p>
+                            <button onclick="expandCard(${data.results.indexOf(movie,0)})"><img src="images/arrow-down-sign-to-navigate.png" alt=""></button>
+                        </div>
+                        <div class= "description" id="${data.results.indexOf(movie,0)}">
+                            <p>${movie.title !== movie.original_title ? movie.original_title : ''}</p>
+                            <p>moviez</p>
+                            <p><h2>release date:</h2> ${movie.release_date}</p>
+                            <p><h2>original language:</h2> ${movie.original_language}</p>
+                            <p><h2>vote average:</h2> ${movie.vote_average}</p>
+                            <p>${movie.overview.length > 163 ? 
+                                movie.overview.substring(0, 140) + "..." : 
+                                movie.overview}</p>
+                        </div>
+                    </div>
+                ` 
+            });
+        })
+    }
+})

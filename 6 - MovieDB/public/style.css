@@ -9,6 +9,20 @@
 body{
     background-color: #14181d;
 }
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #202830;
+    position: sticky;
+}
+header input{
+    width: 20%;
+    text-align: left;
+    background-color: black;
+    padding: 5px 5px;
+}
 .poster{
     width: 225px;
 }
@@ -69,6 +83,7 @@ button img{
     justify-content: flex-end;
     margin-right: 50px;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 input{
     background-color:#202830 ;
