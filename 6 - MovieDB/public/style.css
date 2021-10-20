@@ -98,3 +98,12 @@ input{
     height: fit-content;
     padding: 5px 5px;
 }
+@media(max-width:480px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    header input{
+        width: 60%;
+    }
+}
