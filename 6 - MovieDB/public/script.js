@@ -28,7 +28,7 @@ function render(page){
             document.getElementById('moviesArea').innerHTML+= `
                 <div class="movie-card">
                     <div class="title">
-                        <img class="poster" src="${movie.poster_path == null ? `images/arrow-down-sign-to-navigate.png`: `https://image.tmdb.org/t/p/w500${movie.poster_path}` }">
+                        <img class="poster" src="${movie.poster_path == null ? `images/No-image-found.jpg`: `https://image.tmdb.org/t/p/w500${movie.poster_path}` }">
                         <p>${movie.title}</p>
                         <button onclick="expandCard(${data.results.indexOf(movie,0)})"><img src="images/arrow-down-sign-to-navigate.png" alt=""></button>
                     </div>
@@ -92,7 +92,7 @@ searchBar.addEventListener('keydown',(event)=>{
                 document.getElementById('moviesArea').innerHTML+= `
                     <div class="movie-card">
                         <div class="title">
-                            <img class="poster"src="${movie.poster_path == null ? `images/arrow-down-sign-to-navigate.png`: `https://image.tmdb.org/t/p/w500${movie.poster_path}` }">
+                            <img class="poster"src="${movie.poster_path == null ? `images/No-image-found.jpg`: `https://image.tmdb.org/t/p/w500${movie.poster_path}` }">
                             <p>${movie.title}</p>
                             <button onclick="expandCard(${data.results.indexOf(movie,0)})"><img src="images/arrow-down-sign-to-navigate.png" alt=""></button>
                         </div>
