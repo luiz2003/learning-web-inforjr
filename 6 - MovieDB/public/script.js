@@ -34,7 +34,7 @@ function render(page){
                     </div>
                     <div class= "description" id="${data.results.indexOf(movie,0)}">
                         <p>${movie.title !== movie.original_title ? movie.original_title : ''}</p>
-                        <p>moviez</p>
+                        <p class="logo">moviez</p>
                         <p><h2>release date:</h2> ${movie.release_date}</p>
                         <p><h2>original language:</h2> ${movie.original_language}</p>
                         <p><h2>vote average:</h2> ${movie.vote_average}</p>

@@ -6,6 +6,7 @@
     color: #D2E3F4;
     font-family: 'Work Sans', sans-serif;
 }
+
 body{
     background-color: #14181d;
 }
@@ -97,6 +98,9 @@ input{
     border-radius: 5px;
     height: fit-content;
     padding: 5px 5px;
+}
+.logo{
+    color: #00c030;
 }
 @media(max-width:480px) {
     header {
