@@ -49,7 +49,13 @@ let page = 1;
 render(page)
 document.getElementById('select').addEventListener('click',()=>{
     if (searchMode) {
-        renderSearch(query,pageSelect.value)
+        if (pageSelect.value < 1) {
+            document.getElementById('moviesArea').innerHTML = `<h1>This page does not exist :[</h1>`
+        }
+        else{
+            renderSearch(query,pageSelect.value)
+        }
+        
     }
     else if(pageSelect.value >=1 && pageSelect.value<=500){
         render(pageSelect.value)
@@ -69,7 +75,7 @@ searchBar.addEventListener('keydown',(event)=>{
         window.alert("Please input your query")
     }
     else if(event.keyCode===13){
-       searchMode = true;
+        searchMode = true;
         renderSearch(query,1)
     }
 })
