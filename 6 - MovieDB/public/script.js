@@ -40,6 +40,7 @@ function expandCard(id){
 }
 
 //page selection script
+var searchMode = false;
 document.getElementById('pageSelect').value = 1;
 
 pageSelect = document.getElementById('pageSelect')
@@ -47,7 +48,10 @@ pageSelect = document.getElementById('pageSelect')
 let page = 1;
 render(page)
 document.getElementById('select').addEventListener('click',()=>{
-    if(pageSelect.value >=1 && pageSelect.value<=500){
+    if (searchMode) {
+        renderSearch(query,pageSelect.value)
+    }
+    else if(pageSelect.value >=1 && pageSelect.value<=500){
         render(pageSelect.value)
     }
     else{
@@ -57,6 +61,7 @@ document.getElementById('select').addEventListener('click',()=>{
 
 // movieDB search engine
 searchBar = document.getElementById('searchBar')
+
 searchBar.addEventListener('keydown',(event)=>{
     
     query = searchBar.value;
@@ -64,8 +69,13 @@ searchBar.addEventListener('keydown',(event)=>{
         window.alert("Please input your query")
     }
     else if(event.keyCode===13){
-       
-        fetch( `https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5ee918f014970082a0088b1&query=${query}`)
+       searchMode = true;
+        renderSearch(query,1)
+    }
+})
+
+function renderSearch(query,page) {
+    fetch( `https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5ee918f014970082a0088b1&query=${query}&page=${page}`)
         .then(res => { 
            return res.json()
         })
@@ -98,5 +108,4 @@ searchBar.addEventListener('keydown',(event)=>{
                 document.getElementById('moviesArea').innerHTML = `<h1>This page does not exist :[</h1>`
             }
         })
-    }
-})
+}
