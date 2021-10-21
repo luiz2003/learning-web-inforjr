@@ -1,4 +1,4 @@
-//rendering the page based on the api on html
+//rendering the page based on the api on html function
 function render(page){
     fetch( `http://localhost:3000/api/${page}`)
     .then(res => { 
@@ -39,7 +39,7 @@ function expandCard(id){
     active.classList.toggle('active')
 }
 
-//page selection script
+//page selection and rendering script
 var searchMode = false;
 document.getElementById('pageSelect').value = 1;
 
@@ -68,6 +68,7 @@ document.getElementById('select').addEventListener('click',()=>{
 // movieDB search engine
 searchBar = document.getElementById('searchBar')
 
+// get the query
 searchBar.addEventListener('keydown',(event)=>{
     
     query = searchBar.value;
@@ -80,6 +81,7 @@ searchBar.addEventListener('keydown',(event)=>{
     }
 })
 
+//render page based on a query and a page
 function renderSearch(query,page) {
     fetch( `https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5ee918f014970082a0088b1&query=${query}&page=${page}`)
         .then(res => { 
