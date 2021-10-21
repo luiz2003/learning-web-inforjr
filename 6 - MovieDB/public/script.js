@@ -28,6 +28,9 @@ function render(page){
                 </div>
             ` 
         });
+        if (document.getElementById('moviesArea').innerHTML == '') {
+            document.getElementById('moviesArea').innerHTML = `<h1>This page does not exist :[</h1>`
+        }
     })
 }
 
@@ -91,6 +94,9 @@ searchBar.addEventListener('keydown',(event)=>{
                     </div>
                 ` 
             });
+            if (document.getElementById('moviesArea').innerHTML == '') {
+                document.getElementById('moviesArea').innerHTML = `<h1>This page does not exist :[</h1>`
+            }
         })
     }
 })
