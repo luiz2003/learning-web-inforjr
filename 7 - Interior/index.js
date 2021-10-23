@@ -3,7 +3,12 @@ const express = require('express')
 const app = express()
 const port = 3000
 const path = require('path')
-const nodemailer = require('nodemailer') 
+const nodemailer = require('nodemailer')
+
+app.use(express.urlencoded({
+    extended: false
+}))
+app.use(express.json())
 
 //static folder
 app.use(express.static(path.join(__dirname,'public')))
@@ -36,7 +41,9 @@ let mailOptions = {
     }
 }) */
 app.post('/submit', (req,res) =>{
-    console.log('form pegado')
+    console.log(req.body.name)
+    console.log(req.body.email)
+    console.log(req.body.text)
 })
 //port listening    
 app.listen(port, () => {
