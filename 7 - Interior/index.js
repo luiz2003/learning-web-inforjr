@@ -27,17 +27,18 @@ let mailOptions = {
 };
 
 //send email
-transporter.sendMail(mailOptions, (err,data)=>{
+/* transporter.sendMail(mailOptions, (err,data)=>{
     if(err){
         console.log('error',err)
     }
     else{
         console.log('email sent correctly')
     }
+}) */
+app.post('/submit', (req,res) =>{
+    console.log('form pegado')
 })
-
 //port listening    
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
 })
-
