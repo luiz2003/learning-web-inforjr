@@ -26,12 +26,12 @@ let transporter = nodemailer.createTransport({
 app.post('/submit', (req,res) =>{
     //create email template
     let mailOptions = {
-    from: '"Interior Desings" <interior.design.official.infojr@gmail.com>', 
-    to: `${req.body.email}`, 
+    from: '"Interior Designs" <interior.design.official.infojr@gmail.com>', 
+    to: `luizcastroval321@gmail.com`, 
     subject: "Thanks for using our services!", 
-    html: ` <b>Your name: </b> <p>${req.body.name}</p> <br>
-            <b>Your email: </b> <p> ${req.body.email} </p><br>
-            <b> Your message: </b> <p> ${req.body.text}</p>`
+    html: ` <b>Name: </b> <p>${req.body.name}</p> <br>
+            <b>Email: </b> <p> ${req.body.email} </p><br>
+            <b>Message: </b> <p> ${req.body.text}</p>`
     }
     //send email
     transporter.sendMail(mailOptions, (err,data)=>{
