@@ -22,29 +22,28 @@ let transporter = nodemailer.createTransport({
     }
 })
 
-//create email template
-let mailOptions = {
-   from: '"Interior Desings" <interior.design.official.infojr@gmail.com>', // sender address
-   to: "luizcastroval321@gmail.com", // receiver address
-   subject: "Ooiii", // Subject line
-   text: "isso aqui funciona?", // plain text body
-   html: "<b>Thanks for using our services</b>", // html body
-};
-
-//send email
-/* transporter.sendMail(mailOptions, (err,data)=>{
-    if(err){
-        console.log('error',err)
-    }
-    else{
-        console.log('email sent correctly')
-    }
-}) */
+//manage post request and send email
 app.post('/submit', (req,res) =>{
-    console.log(req.body.name)
-    console.log(req.body.email)
-    console.log(req.body.text)
+    //create email template
+    let mailOptions = {
+    from: '"Interior Desings" <interior.design.official.infojr@gmail.com>', 
+    to: `${req.body.email}`, 
+    subject: "Thanks for using our services!", 
+    html: ` <b>Your name: </b> <p>${req.body.name}</p> <br>
+            <b>Your email: </b> <p> ${req.body.email} </p><br>
+            <b> Your message: </b> <p> ${req.body.text}</p>`
+    }
+    //send email
+    transporter.sendMail(mailOptions, (err,data)=>{
+        if(err){
+            console.log('error',err)
+        }
+        else{
+            console.log('email sent correctly')
+        }
+    }) 
 })
+
 //port listening    
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
