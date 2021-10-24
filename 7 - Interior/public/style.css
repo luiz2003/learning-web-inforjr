@@ -18,6 +18,18 @@ body{
     width: 100%;
     height: 100vh;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
+}
+.forms-area{
+    display: flex;
+}
+aside{
+    background-image: url(images/sectionbg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 65px;
+    display: flex;
+    align-items: flex-end;
 }
