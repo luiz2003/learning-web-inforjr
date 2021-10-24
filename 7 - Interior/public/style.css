@@ -10,6 +10,7 @@
   cursor: pointer;
   padding: 14px 28px;
   width: min-content;
+  font-weight: 700;
 }
 body {
   display: flex;
@@ -68,6 +69,45 @@ textarea {
 h1 {
   font-family: "Scope One", serif;
   font-weight: 400;
+}
+.alert {
+  background: #e58776;
+  color: #d84a31;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  position: absolute;
+  top: 90%;
+  align-items: center;
+  opacity: 0;
+}
+.alert i {
+  color: #d84a31;
+}
+.closeBtn {
+  cursor: pointer;
+}
+.alert.showAlert {
+  opacity: 1;
+  pointer-events: auto;
+}
+.alert.show {
+  animation: show_slide 1s ease forwards;
+}
+.alert.hide {
+  animation: hide_slide 1s ease backwards;
+}
+@keyframes show_slide {
+  0% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes hide_slide {
+  100% {
+    transform: translateX(100%);
+  }
 }
 @media (max-width: 1360px) {
   aside {

@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Scope+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6a648b37ea.js" crossorigin="anonymous"></script>
     <title>Interior designs</title>
 </head>
 <body>
@@ -26,6 +27,14 @@
                 <input class="inputBtn" type="submit" value="Submit">
                 </form> 
             </div>
+
+            <div class="alert hide" id="warning">
+                <i class="fas fa-exclamation-circle"></i>
+                <span id="warningTxt">Warning: you did something wrong!</span>
+                <div class="closeBtn" onclick="removeWarning()">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
         </div>
         
         <aside>
@@ -35,5 +44,6 @@
     </div>
 
     <script src="script.js"></script>
+    
 </body>
 </html>
