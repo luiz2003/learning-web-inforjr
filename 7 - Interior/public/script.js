@@ -1,9 +1,7 @@
 let form = document.getElementById('form')
 
 //get info with DOM and then send it with post method
-form.addEventListener('submit',(event)=>{
-    event.preventDefault()
-
+function submit() {
     let name = document.getElementById('name').value
     let email = document.getElementById('email').value
     let text = document.getElementById('text').value
@@ -21,4 +19,35 @@ form.addEventListener('submit',(event)=>{
         },
         body : JSON.stringify(data)
     })
+
+    //clear input camps after submiting
+    name = ''
+    email = ''
+    text = ''
+}
+// submit with submit button
+form.addEventListener('submit',(event)=>{
+    event.preventDefault()
+    submit()
+})
+
+//submit with enter key
+document.getElementById('name').addEventListener('keydown',(event)=>{
+    if (event.key == 13) {
+        event.preventDefault()
+        submit()
+    }
+})
+
+document.getElementById('email').addEventListener('keydown',(event)=>{
+    if (event.keyCode == 13) {
+        event.preventDefault()
+        submit()
+    }
+})
+document.getElementById('text').addEventListener('keydown',(event)=>{
+    if (event.keyCode == 13) {
+        event.preventDefault()
+        submit()
+    }
 })
