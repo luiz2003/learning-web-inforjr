@@ -21,9 +21,9 @@ function submit() {
     })
 
     //clear input camps after submiting
-    name = ''
-    email = ''
-    text = ''
+    document.getElementById('name').value = ''
+    document.getElementById('email').value = ''
+    document.getElementById('text').value = ''
 }
 // submit with submit button
 form.addEventListener('submit',(event)=>{
