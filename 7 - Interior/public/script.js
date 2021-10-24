@@ -25,6 +25,8 @@ function submit() {
     document.getElementById('email').value = ''
     document.getElementById('text').value = ''
 }
+
+//error message rendering
 let warning = document.getElementById('warning')
 function showWarning() {
     warning.classList.remove('hide')
@@ -43,6 +45,7 @@ function removeWarning() {
     },1000)
 }
 
+// data validation 
 function validateData(){
 
     let name = document.getElementById('name').value.trim().toString()
@@ -88,19 +91,25 @@ form.addEventListener('submit',(event)=>{
 document.getElementById('name').addEventListener('keydown',(event)=>{
     if (event.keyCode == 13) {
         event.preventDefault()
-        submit()
+        if (validateData()) {
+            submit()
+        }
     }
 })
 
 document.getElementById('email').addEventListener('keydown',(event)=>{
     if (event.keyCode == 13) {
         event.preventDefault()
-        submit()
+        if (validateData()) {
+            submit
+        }
     }
 })
 document.getElementById('text').addEventListener('keydown',(event)=>{
     if (event.keyCode == 13) {
         event.preventDefault()
-        submit()
+        if (validateData()) {
+            submit()
+        }
     }
 })
