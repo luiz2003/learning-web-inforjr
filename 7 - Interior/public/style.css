@@ -26,10 +26,9 @@ body {
 }
 .forms-area {
   display: flex;
+  min-height: 78vh;
 }
-.form {
-  height: 100%;
-}
+
 aside {
   background-image: url(images/sectionbg.png);
   background-size: cover;
@@ -38,13 +37,14 @@ aside {
   padding: 0 65px;
   display: flex;
   align-items: flex-end;
+  z-index: 1000;
 }
 form {
   display: flex;
   flex-direction: column;
   gap: 30px;
   align-items: center;
-  height: 100%;
+  width: 40vw;
 }
 input {
   background: #fbfcfdf0;
@@ -63,12 +63,14 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5% 10%;
+  justify-content: space-between;
   gap: 20px;
+  padding: 60px 0px;
 }
 h1 {
   font-family: "Scope One", serif;
   font-weight: 400;
+  margin-bottom: 40px;
 }
 .alert {
   background: #e58776;
