@@ -83,6 +83,7 @@ h1 {
   top: 90%;
   align-items: center;
   opacity: 0;
+  pointer-events: none;
 }
 .alert i {
   color: #d84a31;

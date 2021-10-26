@@ -47,7 +47,6 @@ function removeWarning() {
 
 // data validation 
 function validateData(){
-
     let name = document.getElementById('name').value.trim().toString()
     let email = document.getElementById('email').value.trim().toString()
     let text = document.getElementById('text').value.trim().toString()
@@ -72,7 +71,7 @@ function validateData(){
         showWarning()
         return false
     }
-    else if (email.length < 5 || /[^@]+$/gi.test(email)) {
+    else if (email.length < 5 || email.indexOf('@')<0) {
         warningTxt.innerHTML = 'Please insert a valid email!'
         showWarning()
         return false

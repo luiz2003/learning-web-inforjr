@@ -27,7 +27,7 @@ app.post('/submit', (req,res) =>{
     //create email template
     let mailOptions = {
     from: '"Interior Designs" <interior.design.official.infojr@gmail.com>', 
-    to: `luizcastroval321@gmail.com`, 
+    to: `laviovale@infojr.com.br`, 
     subject: "Thanks for using our services!", 
     html: ` <b>Name: </b> <p>${req.body.name}</p> <br>
             <b>Email: </b> <p> ${req.body.email} </p><br>
