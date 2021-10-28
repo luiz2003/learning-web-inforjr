@@ -29,9 +29,10 @@ app.post('/submit', (req,res) =>{
     from: '"Interior Designs" <interior.design.official.infojr@gmail.com>', 
     to: `laviovale@infojr.com.br`, 
     subject: "Thanks for using our services!", 
-    html: ` <b>Name: </b> <p>${req.body.name}</p> <br>
+    html:`  <b>Name: </b> <p>${req.body.name}</p> <br>
             <b>Email: </b> <p> ${req.body.email} </p><br>
-            <b>Message: </b> <p> ${req.body.text}</p>`
+            <b>Message: </b> <p> ${req.body.text}</p>
+        `
     }
     //send email
     transporter.sendMail(mailOptions, (err,data)=>{
