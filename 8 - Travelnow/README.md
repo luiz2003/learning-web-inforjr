@@ -9,7 +9,7 @@
 
 ## Descrição da atividade
 
-O projeto Travelnow tem por objetivo introduzir o framework ReactJS, principal tecnologia front-end usada na InfoJr. O intuito é ter o primeiro contato para conhecer e explorar a estrutura de um projeto em React.
+O projeto Travelnow tem por objetivo introduzir a biblioteca ReactJS, principal tecnologia front-end usada na InfoJr. O intuito é ter o primeiro contato para conhecer e explorar a estrutura de um projeto em React.
 
 ### Tarefa
 
@@ -25,6 +25,7 @@ Com base no [mockup](https://www.figma.com/file/kn8cpVGAI2b5h4wIjRx424/Travelnow
 
 ### Vídeos/Textos por assuntos presentes na atividade
 - [Documentação(texto)](https://pt-br.reactjs.org/docs/getting-started.html)
+- [Documentação nova (beta)](https://beta.reactjs.org/)
 - [React JS // Dicionário do Programador - Código Fonte TV](https://youtu.be/NhUr8cwDiiM)
 - [ReactJS Básico 01 - Introdução - Ralf Lima](https://youtu.be/vVRkM3Qn9pA)
 - [ReactJS Básico 02 - Criando e executando projetos - Ralf Lima](https://youtu.be/Kyy__5n81Tk)
