@@ -25,6 +25,7 @@ Com base no [mockup](https://www.figma.com/file/kn8cpVGAI2b5h4wIjRx424/Travelnow
 - [ReactJS Básico 04 - Render - Ralf Lima](https://youtu.be/ubKKEQE0CrM)
 - [ReactJS Básico 17 - CSS - Ralf Lima](https://youtu.be/jh4lYJx6KR8)
 - [ReactJS Básico 18 - Utilizando className - Ralf Lima](https://youtu.be/q9Z1FBnmNZQ)
+- [Documentação Vite](https://vitejs.dev/guide/#trying-vite-online)
 
 ## Instruções para envio
 
