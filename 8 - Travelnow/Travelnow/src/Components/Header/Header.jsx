@@ -1,19 +1,37 @@
+import { useState } from 'react'
 import './style.css'
 
+
+
 export default function Header() {
+    const [hambOpen, setHambOpen] = useState(false)
+    function toggle(){
+        setHambOpen(prev => !prev)
+    }
     return (
+      
         <div>
             <header>
                 <img src="images/logo.svg" alt="" />
                 
-                <nav>
+                <nav >
                     <a href="">Discover</a>
                     <a href="">Destination</a>
                     <a href="">About us</a>
                 </nav>
-
-                <button>Book a Tour</button>
+                <img onClick={toggle} className="hambBtn" src={`${hambOpen? "images/close-hbg.svg": "images/open-hbg.svg"}`} alt="" />
+                <button className="navBtn"  >Book a Tour</button>
             </header>
+            
+            <div className={`${hambOpen? "mobileNav active" : "mobileNav closed"}`}>
+                    <a href="">Discover</a>
+                    <a href="">Destination</a>
+                    <a href="">About us</a>
+                    <button className="navBtn"  >Book a Tour</button>
+            </div>
+
         </div>
     )
+  
+    
 }
