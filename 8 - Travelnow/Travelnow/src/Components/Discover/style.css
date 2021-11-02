@@ -73,6 +73,16 @@ button{
     .discover-aside{
         width: 100%;
     }
+    .hero-title{
+        font-size: 30px;
+        line-height: 91.7%;
+        letter-spacing: -0.01em;
+    }
+    .discover-aside p{
+        font-size: 15px;
+        line-height: 145.2%;
+        letter-spacing: 0.015em;
+    }
     .input{
         width: calc(100% - 64px);
         padding: 11px 27px;
