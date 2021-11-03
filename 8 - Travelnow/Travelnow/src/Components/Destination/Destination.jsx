@@ -46,18 +46,44 @@ export default function Destination() {
 
             <div className="cards">
                 <div className="card">
-                    
+
+                    <img className="cardImg" src="images/Mountains.svg" alt="" />
+
+                    <div className="card-txt">
+                        <h1 className="card-title">Travel to Mountains</h1>
+
+                        <img src="images/stars.svg" alt="" />
+
+                        <p className="price"> $6000</p>
+                    </div>
                 </div>
 
                 <div className="card">
 
+                    <img className="cardImg" src="images/Desert.svg" alt="" />
+
+                    <div className="card-txt">
+                        <h1 className="card-title">Travel to Desert</h1>
+
+                        <img src="images/stars.svg" alt="" />
+
+                        <p className="price">$6000 </p>
+                    </div>
                 </div>
 
-                <div className="car">
+                <div className="card">
 
+                    <img className="cardImg" src="images/Camping.svg" alt="" />
+
+                    <div className="card-txt">
+                        <h1 className="card-title">Camping in Mountains</h1>
+
+                        <img src="images/stars.svg" alt="" />
+
+                        <p className="price"> $6000</p>
+                    </div>
                 </div>
             </div>
-
         </div>
     )
 }

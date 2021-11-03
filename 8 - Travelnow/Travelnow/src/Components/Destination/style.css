@@ -51,7 +51,8 @@
 }
 .info-text{
     display: flex;
-    gap: 80px;
+    justify-content: space-around;
+    width: 100%;
 }
 .info-block{
     width: 110px;
@@ -77,4 +78,69 @@
 }
 .cards{
     margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cardImg{
+    width: 30vw;
+}
+.card-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 10px 10px;
+    padding: 16px 0;
+    width: 100%;
+}
+.card-txt h1{
+    font-family: 'Crimson Text', serif;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 113.7%;
+    letter-spacing: -0.01em;
+    color: #233862;
+}
+.price{
+    font-size: 21px;
+    line-height: 145.2%;
+    letter-spacing: 0.015em;
+    color: #0F214F;
+    font-weight: 300;
+}
+@media (max-width: 1000px) {
+    .cardImg{
+        width: 40vw;
+    }
+    .cards{
+    
+        overflow-x: scroll;
+        justify-content: flex-start;
+        gap: 21px;
+        padding: 0 32px;
+    }
+}
+@media (max-width: 768px ) {
+    .hero2{
+        flex-direction: column;
+    }
+    .hero2 img{
+        width: 85vw;
+    }
+    .hero2 aside{
+        width: 85vw;
+    }
+    .info-text{
+        display: none;
+    }
+    .cardImg{
+        width: 62vw;
+    }
 }
