@@ -6,6 +6,7 @@ import './style.css'
 export default function Header() {
     const [hambOpen, setHambOpen] = useState(false)
     function toggle(){
+        !hambOpen? document.getElementsByTagName('body')[0].classList.add('active') : document.getElementsByTagName('body')[0].classList.remove('active')
         setHambOpen(prev => !prev)
     }
     return (

@@ -78,13 +78,17 @@ nav a:hover{
         height: calc(100vh - 44px);
         justify-content: center;
         gap: 50px;
-        overflow-y: hidden;
+        background-attachment: fixed;
         position: fixed;
         top: 44px;
         height: calc(100vw - 44px);
-        height: 100vh;
+        height: 100%;
         width: 100%;
         background-color: white;
+    }
+    body.active{
+        overflow-y: hidden;
+        overflow-x: hidden;
     }
 
     
