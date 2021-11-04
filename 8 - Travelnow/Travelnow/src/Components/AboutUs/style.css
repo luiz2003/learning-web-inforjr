@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    text-decoration: none;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Nunito', sans-serif;
+}
+.about-us{
+    margin-top: 100px;
+    display: flex;
+    gap: 8vw;
+    justify-content: center;
+    align-items: center;
+}
+.aside-img{
+    width: 47vw;
+}
+.services{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    height: 100%;
+    
+}
+.services-title{
+    font-family: Crimson Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 113.7%;
+    letter-spacing: -0.01em;
+}
+.service-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.service-card{
+    display: flex;
+    gap: 25px;
+}
+.service-txt h2{
+    font-family: Crimson Text;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 113.7%;
+    letter-spacing: 0.01em;
+    margin-bottom: 3px;
+}
+.service-txt p{
+    font-size: 14px;
+    line-height: 145.2%;    
+    letter-spacing: 0.015em;
+    color: #3D3D3D;
+}
+@media (max-width: 768px) {
+    .about-us{
+        flex-direction: column;
+    }
+    .aside-img{
+        width: 84%;
+    }
+    .services{
+        width: 84%;
+    }
+    .services-title{
+        font-size: 30px;
+    }
+    .services-txt h2{
+        font-size: 22.5px;
+    }
+}

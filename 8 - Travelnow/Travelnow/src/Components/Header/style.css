@@ -9,14 +9,14 @@
 }
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 10px 50px;
+    padding: 10px 0;
     font-size: 18px;
     line-height: 25px;
     position: fixed;
     top: 0;
-    width: 93%;
+    width: 100vw;
     background-color: white;
 }
 nav{
@@ -58,9 +58,14 @@ nav a:hover{
     cursor: pointer;
 }
 @media (max-width : 800px) {
+    .header{
+        width: 100vw;
+        background-color: white;
+    }
     header{
+        justify-content: space-between;
         padding: 10px 32px;
-        width: 85%;
+        width: calc(100vw - 64px);
     }
     nav{
         display: none;

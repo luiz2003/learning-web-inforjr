@@ -11,7 +11,7 @@ export default function Header() {
     }
     return (
       
-        <div>
+        <div className="header">
             <header>
                 <img src="images/logo.svg" alt="" />
                 
