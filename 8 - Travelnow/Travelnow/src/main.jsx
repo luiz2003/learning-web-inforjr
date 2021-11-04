@@ -4,6 +4,7 @@ import Header from './Components/Header/Header'
 import Discover from './Components/Discover/Discover'
 import Destination from './Components/Destination/Destination'
 import AboutUs from './Components/AboutUs/AboutUs'
+import Footer from './Components/Footer/Footer'
 
 
 ReactDOM.render(
@@ -12,6 +13,7 @@ ReactDOM.render(
     <Discover />
     <Destination />
     <AboutUs />
+    <Footer/>
   </React.StrictMode>,
   document.getElementById('root')
 )
