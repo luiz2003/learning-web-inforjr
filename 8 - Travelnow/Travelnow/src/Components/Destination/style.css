@@ -143,4 +143,35 @@
     .cardImg{
         width: 62vw;
     }
+    .aside-title{
+        margin-bottom: 32px;
+    }
+    .aside-title h1{
+        font-size: 30px;
+        line-height: 113.7%;
+        letter-spacing: -0.01em;
+    }
+    .aside-title p{
+        font-size: 15px;
+        line-height: 145.2%;
+        letter-spacing: 0.015em;
+    }
+    .info button{
+        padding: 11px 17px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .card-txt h1{
+        font-size: 15px;
+        line-height: 113.7%;    
+        letter-spacing: -0.01em;
+    }
+    .price{
+        font-size: 12px;
+        line-height: 145.2%;
+        letter-spacing: 0.015em;
+    }
+    .stars{
+        width: 67px;
+    }
 }

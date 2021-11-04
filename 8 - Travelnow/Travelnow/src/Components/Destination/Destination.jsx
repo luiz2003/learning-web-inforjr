@@ -52,7 +52,7 @@ export default function Destination() {
                     <div className="card-txt">
                         <h1 className="card-title">Travel to Mountains</h1>
 
-                        <img src="images/stars.svg" alt="" />
+                        <img className="star" src="images/stars.svg" alt="" />
 
                         <p className="price"> $6000</p>
                     </div>
@@ -65,7 +65,7 @@ export default function Destination() {
                     <div className="card-txt">
                         <h1 className="card-title">Travel to Desert</h1>
 
-                        <img src="images/stars.svg" alt="" />
+                        <img className="stars" src="images/stars.svg" alt="" />
 
                         <p className="price">$6000 </p>
                     </div>
@@ -78,7 +78,7 @@ export default function Destination() {
                     <div className="card-txt">
                         <h1 className="card-title">Camping in Mountains</h1>
 
-                        <img src="images/stars.svg" alt="" />
+                        <img className="stars" src="images/stars.svg" alt="" />
 
                         <p className="price"> $6000</p>
                     </div>
