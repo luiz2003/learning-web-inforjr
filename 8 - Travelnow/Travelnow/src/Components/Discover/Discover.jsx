@@ -2,7 +2,7 @@ import './style.css'
 
 export default function Discover() {
     return (
-        <div className="discover">
+        <div className="discover" id="discover">
             <aside className ="discover-aside">
                 <h1 className="hero-title">Find your next place to travel</h1>
                 
@@ -12,7 +12,7 @@ export default function Discover() {
                 </p>
                 
                 <div className="input">
-                    <input type="text" />
+                    <input type="text" placeholder="Burj khalifa, Dub" />
                     <button className="search-btn">Search</button>
                 </div>
 

@@ -2,7 +2,7 @@ import './style.css'
 
 function AboutUs() {
     return (
-        <div className = "about-us">
+        <div className = "about-us" id="about-us">
            <img className="aside-img" src="images/about-us.svg" alt="" />
 
            <div className="services">

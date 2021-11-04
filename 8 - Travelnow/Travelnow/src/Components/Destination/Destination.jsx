@@ -2,7 +2,7 @@ import './style.css'
 
 export default function Destination() {
     return (
-        <div className = "destination">
+        <div className = "destination" id ="destination">
 
             <div className="hero2">
 
