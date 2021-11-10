@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Cedarville+Cursive&family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Coffe-Shop</title>
+</head>
+<body>
+   <header>
+    <img src="images/logo.svg" alt="">
+    <button id="btnMbl"><img id="menuImg" src="images/nav-icon.png" alt=""></button>
+    <nav id="nav">
+        <p><a href="#aboutus">About us</a></p>
+        <p><a href="#promotion">Promotion</a></p>
+        <p><a href="#shopp">Shop</a></p>
+        <p><a href="#contacts">Contacts</a></p>
+        <button>Contact Us</button>
+        <div class="icons-nav">
+            <img src="images/TwtIcon.png" alt="">
+            <img src="images/InstaIcon.png" alt="">
+            <img src="images/FbIcon.png" alt="">
+        </div>
+    </nav>
+   </header>
+   
+   <main id="body">
+
+        <div class="home-container">
+            <aside class="home-aside">
+                <h3>Drink coffee, enjoy with Samwyle</h3>
+                <h1>Coffee Shop <br></h1>
+                <button>Order here</button>
+            </aside>
+            
+            <div class="home-main">
+                <div id="main-img"><img src="images/Figure1.png" alt=""></div> 
+                <div class="socials">
+                    <div class="icons">
+                        <img src="images/TwtIcon.png" alt="">
+                        <img src="images/InstaIcon.png" alt="">
+                        <img src="images/FbIcon.png" alt="">
+                    </div>
+                    <div id="main-follow"><p>Follow us</p></div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="aboutus" class="about-container">
+            <div class="aboutUs-img">
+                <h3>About us</h3>
+                <div id="figure2">
+                    <picture>
+                        <source srcset="images/Figure2Mobile.png" media="(max-width: 768px)">
+                        <img id="fg2" src="images/Figure2.png" alt="">
+                    </picture>
+                </div>
+                
+            </div>
+            <div class="aboutus-txt">
+                <h2>Coffe shop Samwayle</h2>
+                <div class="txt-area">
+                    <p>Only one moment - when the barista reaches out over the bar to transfer the cup to the outstretched hand of the buyer.
+                    But this is exactly the moment when a connection arises between us and our guests. </p>
+                    <p>And we strive to do our best to maintain this connection - starting with our commitment to selecting the highest quality coffee in the world and ending with how we interact with guests and organizations to fulfill our obligations.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="promotion" class="promotion-container">
+            <aside>
+                <h2>Coffe of the day</h2>
+                <div class="txt-area">
+                <p>Americano coffee (Italian: Caffè Americano) is an espresso diluted with hot water. The presence of foam (cream) depends on how coffee and water are mixed.
+                Attention! The concepts of “American” and “American coffee” should not be confused. n the second case, this refers not to diluted espresso, but to a drink prepared through a filter system.</p>
+                </div>
+                <button>Order now</button>
+           </aside>
+           <div id="promotion-img">
+                <h3>Promotion</h3>
+                <picture>
+                    <source srcset="images/Figure3Mobile.png" media="(max-width: 768px)">
+                    <img id="fg3" src="images/Figure3.svg" alt="">
+                </picture>
+           </div>
+        </div>
+
+        <div id="shopp" class="shop-container">
+            <div class="menu-card">
+                <h4>Americano</h4>
+                <div class="menu-txt">
+                    <p>The name Latte (from Italian “milk”) speaks about the main ingredient of the drink. It is recommended to take fat milk - at least 3.2%. In addition to it, milk foam.</p>
+                </div>
+                <button>Order now</button>
+            </div>
+            <div class="menu-card">
+                <h4>Latte</h4>
+                <div class="menu-txt">
+                    <p>The name Latte (from Italian “milk”) speaks about the main ingredient of the drink. It is recommended to take fat milk - at least 3.2%. In addition to it, milk foam.</p>
+                </div>
+                <button>Order now</button>
+            </div>
+            <div class="menu-card">
+                <h4>Expresso</h4>
+                <div class="menu-txt">
+                    <p>Espresso - black coffee made in a coffee machine or a special coffee machine, where hot water is passed through pressed ground beans at a pressure.</p>
+                </div>
+                <button>Order now</button>
+            </div>
+        </div>
+
+        <div id="contacts" class="contacts-container">
+            <div class="map">
+                <h3>Contacts</h3>
+                <img src="images/snazzy-image (1) 1.png" alt="">
+            </div>
+            <div class="address">
+                <h4>Our address</h4>
+                <div class="txt-area" id="locations">
+                    <p>110 St-Cathedral Pkwy Station</p>
+                    <p>4310 94th St, Flushing</p>
+                    <p class="txt-gone">94-54 Corona Ave., Elmhurst</p>
+                    <p class="txt-gone">5627 Van Doren St, Queens</p>
+                    <button>See more address</button>
+                </div>
+            </div>
+        </div>
+   </main>
+
+    <footer>
+        
+        <div id="footer-txt">
+            <p><span id="year"> </span>(c) - Samwyle bandtitos</p> 
+        </div>
+        <script>
+            document.getElementById("year").innerHTML = new Date().getFullYear();
+        </script>
+    </footer>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html> 

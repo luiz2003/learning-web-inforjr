@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Work+Sans:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <main>
+        <h1>Calculator <span>EXPRESS</span></h1>
+        <div class="calculator">
+            <div class="input">
+                <input type="number" id="num1" placeholder="1st number" autocomplete="off">
+                <p id="operation"></p>
+                <input type="number" id="num2" placeholder="2nd number" autocomplete="off">
+            </div>
+            
+            <div class="operations">
+                <button id="addBtn" onclick="sumSelect()">Add</button>
+                <button id="subBtn" onclick="subSelect()" >Subtract</button>
+                <button id="mulBtn" onclick="mulSelect()">Multiply</button>
+                <button id="divBtn" onclick="divSelect()">Divide</button>
+            </div>
+            
+            <button class="calculate-button" onclick="calculate()" >Calculate!</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

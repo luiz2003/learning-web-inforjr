@@ -1,0 +1,100 @@
+.discover{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 124px;
+    gap: 50px;
+    padding: 0  0 0 52px;
+}
+.discover-aside{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.hero-title{
+    font-family: 'Crimson Text', serif;
+    font-size: 76px;
+    line-height: 91.7%; 
+    letter-spacing: -0.01em;
+    color: #0F214F;
+    font-weight: 400;
+    width: 100%;
+}
+.discover-aside p{
+    font-size: 18px;
+    line-height: 145.2%;
+    letter-spacing: 0.015em;
+    color: #3D3D3D;
+}
+.input{
+    display:flex;
+    flex-direction:row;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.21);
+    border-radius: 100px;
+    width: 40vw;
+    padding: 13px 30px;
+}
+.input input::placeholder{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 145.2%;
+    letter-spacing: 0.015em;
+    color: #FBB667;
+}
+input{
+    width: 100%;
+    font-family: Nunito;
+    font-size: 18px;
+    letter-spacing: 0.015em;
+    color: #FBB667;
+}
+input:focus{
+    outline: none;
+}
+.search-btn{
+    color: white;
+    background: #FBB667;
+    padding: 11px 58px;
+    border-radius: 100px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+}
+button{
+    cursor: pointer;
+}
+.discover img{
+    width: 45vw;
+}
+@media (max-width : 800px) {
+    .discover{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 0 32px;
+    }
+    .discover img{
+        width: 100%;
+    }
+    .discover-aside{
+        width: 100%;
+    }
+    .hero-title{
+        font-size: 30px;
+        line-height: 91.7%;
+        letter-spacing: -0.01em;
+    }
+    .discover-aside p{
+        font-size: 15px;
+        line-height: 145.2%;
+        letter-spacing: 0.015em;
+    }
+    .input{
+        width: calc(100% - 64px);
+        padding: 11px 27px;
+    }
+    .search-btn{
+        padding: 3px 25px;
+    }
+}

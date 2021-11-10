@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>La paderie</title>
+</head>
+
+<body>
+    
+    <header>
+        <img src="images/Logo.svg" alt="">
+    </header>
+        
+    <div class="transactions-queue">
+        <div class="transactions">
+            <div class="transaction-card">
+                <div class="tr-card-header">
+                    <p>Pessoas na fila</p> <img src="images/ppl-icon.svg" alt="">
+                </div>
+                <h1 id="queueLenght">0</h1>
+            </div>
+            
+            <div class="transaction-card">
+                <div class="tr-card-header">
+                    <p>Pães Vendidos</p> <img src="images/shop-cart-icon.svg" alt="">
+                </div>
+                <h1 id="breadAmount">0</h1>
+    
+            </div>
+            
+            <div class="transaction-card brown-card">
+                <div class="tr-card-header">
+                    <p>Entrada</p> <img src="images/money-icon.svg" alt="">
+                </div>
+                <h1 ><span id="moneyInflux">R$ 0,00</span></h1>
+            </div>
+    
+        </div>
+        
+    
+        <div class="cards-area" >
+            <div class="queue-container">
+                <h2 id="addBtn">+ Adicionar pessoa a fila</h2>
+                <div class="queue" id="queue">
+                
+                   
+                </div>
+        
+                <footer>
+                    <p>Com 💛 Info Jr UFBA 2021</p>
+                </footer>
+                <div class="modal-overlay" id="modal">
+                    <div class="modal" >
+                        <div class="modal-content">
+                            <h2>Adicionar pessoa a fila</h2>
+                            <input type="text" id="nameInput" placeholder="Nome completo do cliente">
+                            <input type="number" min='1' id="breadInput" placeholder="Total de pães:">
+                        </div>
+                        <div class="button-area">
+                            <button id="sendBtn" onclick="addClientCard()">Enviar</button> <button id="cancelBtn">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

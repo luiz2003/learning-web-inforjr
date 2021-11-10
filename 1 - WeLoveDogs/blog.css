@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;    
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+}
+button{
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 16px;
+    height: 10vh;
+}
+
+header p{
+    font-size: 48px;
+    font-weight: 700;
+    color: black;
+}
+
+header p span{
+    color: greenyellow;
+    font-weight: 700;
+}
+
+header nav{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-right: 16px;
+
+}
+
+header nav a{
+    color: black;
+    font-weight: 700;
+}
+
+header nav button{
+    background-color: #7ED32166;
+    font-size: 16px;
+    color: #1C4701;
+    padding: 9px 32px 9px 32px;
+    font-weight: 700;
+    border-radius: 16px;
+    font-weight: 700;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    gap: 45px;
+}
+img{
+    width: 304px;
+    height: 228px;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 48px;    
+}
+
+h2{
+    font-weight: 700;
+    font-size: 32px;    
+}
+
+.post-container{
+    display: flex;
+}
+.text-post{
+    width: 778px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: justify;
+    text-justify: inter-word;
+    gap: 23px;
+}

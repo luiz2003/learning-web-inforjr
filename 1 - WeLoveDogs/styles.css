@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;    
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+}
+button{
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 16px;
+    height: 10vh;
+}
+
+header p{
+    font-size: 48px;
+    font-weight: 700;
+    color: black;
+}
+
+header p span{
+    color: greenyellow;
+    font-weight: 700;
+}
+
+header nav{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-right: 16px;
+
+}
+
+header nav a{
+    color: black;
+    font-weight: 700;
+}
+
+header nav button{
+    background-color: #7ED32166;
+    font-size: 16px;
+    color: #1C4701;
+    padding: 9px 32px 9px 32px;
+    font-weight: 700;
+    border-radius: 16px;
+    font-weight: 700;
+
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+main div{
+    width: 371px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+main div p {
+    margin-top: 8.4vh;
+    font-size: 48px;
+    font-weight: 700;   
+}
+
+main div button{
+    background: #7ED321;
+    font-size: 18px;
+    color: #1C4701;
+    width: 220px;
+    padding: 13px 0px 13px 0px;
+    border-radius: 16px;
+    font-weight: 700;
+}
